@@ -1,3 +1,1 @@
-##Portfolio Project
-
-My portfolio project
+Portfolio Project
