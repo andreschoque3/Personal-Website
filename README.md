@@ -10,8 +10,6 @@ I built this website using the following:
 
 <br />
 
-<br />
-
 #
 
 Please follow the link to access the website here: 
