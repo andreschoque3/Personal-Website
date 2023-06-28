@@ -1,6 +1,6 @@
 # Portfolio Website
 
-I built this website to showcase my Web Dev Skills
+I built this website to showcase my Web Dev Skills 👨‍💻
 
 I built this website using the following:
 
@@ -8,4 +8,4 @@ I built this website using the following:
 * CSS
 * JS
 
-Please follow the link to the website here: 
+Please follow the link to access the website here: 
