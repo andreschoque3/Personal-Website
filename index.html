@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Andres Choque - Portfolio Website</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+
     <div id="header">
         <div class="container">
             <nav>
@@ -17,17 +20,139 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Software Engineer/Developer</p>
-                <h1>Hi, I'm <span>Andres</span><br>from Bolivia</h1>
+                <p>Junior Software Engineer/Developer</p>
+                <h1>Hi, I'm Andres Choque</h1>
+                <h2>I love learning about new things 🚀 I enjoy topics <br/>
+                 such as business, fashion, and technology 🌐<br/> 
+                 
             </div>
         </div>
     </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-col-1">
+                    <img src="images/Andres Choque- Copy.jpg">
+                </div>
+                <div class="abt-col-2">
+                    <h1 class="sub-header">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dolores, odio exercitationem iure id eaque sed nihil, esse rerum, placeat quo. Eos sint a ipsa quos accusamus et tenetur non.</p>
+
+                    <div class="tabs">
+                        <p class="tab-links act-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-conts act-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br/>English and Spanish (bilingual proficiency)</li>
+                            <li><span>Front-End</span><br/>React, Angular, HTML, CSS, Javascript, Typescript</li>
+                            <li><span>Back-End</span><br/>Node.js, Express.js, C#, Python, Django, PHP</li>
+                            <li><span>Database</span><br/>MongoDB, SQL, SQL Server</li>
+                            <li><span>Tools</span><br/>Git, Github, Bitbucket, Postman, PowerShell </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-conts" id="experience">
+                        <ul>
+                            <li><span>May 2022 - Aug 2022</span><br/>Software Developer Intern | Samaritan's Purse</li>
+                            <li><span>Mar 2021 - Aug 2021</span><br/>Competitor/Researcher | OpenCV & Microsoft</li>
+                            <li><span>May 2021 - Jul 2021</span><br/>Software Engineer Intern | CREOTEC</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-conts" id="education">
+                        <ul>
+                            <li><span>May 2023</span><br/>BS in Computer Science | Liberty University</li>
+                            <li><span>March 2023</span><br/>Certification Responsive Web Design | FreeCodeCamp</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="resume">
+                    <a href="images/Andres-Choque-SWE-Resume-2023.pdf" download class="btn btncv">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-header">My Projects</h1>
+            
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                       <h3>Financial Bugeting Web App</h3>
+                       <p>The app allows you to input your daily expenses and see how its organized. Check it out.</p>
+                       <a href="#"> <i class="fa-solid fa-link"></i></a> 
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>The webiste showcases what I have accomplished so far. Check it out.</p>
+                        <a href="#"> <i class="fa-solid fa-link"></i></a> 
+                     </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>CREOTEC Website</h3>
+                        <p>The website allows you to browse through different prothestics to purchase. Check it out.</p>
+                        <a href="#"> <i class="fa-solid fa-link"></i></a> 
+                     </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-l">
+                    <h1 class="sub-header">Let's Connect</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> andreschoque71@gmail.com</p>
+                    <div class="social">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="contact-r">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" id=""  rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btncv">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>©️ 2023 Andres Choque. All rights reserved.</p>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

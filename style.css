@@ -14,7 +14,6 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
 }
@@ -67,11 +66,260 @@ nav ul li a:hover::after {
     font-size: 30px;
 }
 
+
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
 
-.header-text h1 span {
-    color: #ff004f;
+.header-text h2 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: normal;
 }
+
+/**********About section**********/
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.abt-col-1 {
+    flex-basis: 35%;
+}
+
+.abt-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.abt-col-2 {
+    flex-basis: 60%;
+}
+.sub-header {
+    font-size: 60px;
+    font-weight: 600px;
+    color: white;
+}
+
+.tabs {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s
+}
+
+.tab-links.act-link::after {
+    width: 50%;
+}
+
+.tab-conts ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-conts ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-conts{
+    display: none;
+}
+
+.tab-conts.act-tab {
+    display: block;
+}
+
+.resume {
+    padding-left: 100px;
+}
+
+.btn.btncv {
+    display: inline-block;
+    background: #ff004f;
+}
+
+/**********Projects section**********/
+#projects {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: absolute;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn { 
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+/**********Contact section**********/
+
+.contact-l {
+    flex-basis: 35%;
+}
+
+.contact-r {
+    flex-basis: 60%;
+}
+
+.contact-l p {
+    margin-top: 30px;
+}
+
+.contact-l p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.contact-r form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btncv {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 40px;
+
+}
+
+/**********Responsive section**********/
+
