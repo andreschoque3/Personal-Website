@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Andres Choque - Portfolio Website</title>
+    <link rel="shortcut icon" type="x-icon" href="images/image-portrait-solid.svg">
+    <title> Andres Choque - Portfolio Website</title>
     <script src="script.js" defer></script>
 </head>
 
@@ -17,12 +18,14 @@
         <div class="container">
             <nav>
                 <img src="" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="menus">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Junior Software Engineer/Developer</p>
@@ -43,7 +46,7 @@
                 </div>
                 <div class="abt-col-2">
                     <h1 class="sub-header">About Me</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dolores, odio exercitationem iure id eaque sed nihil, esse rerum, placeat quo. Eos sint a ipsa quos accusamus et tenetur non.</p>
+                    <p>I am a Junior Software Developer that started  </p>
 
                     <div class="tabs">
                         <p class="tab-links act-link" onclick="opentab('skills')">Skills</p>
@@ -128,9 +131,9 @@
                     <h1 class="sub-header">Let's Connect</h1>
                     <p> <i class="fa-solid fa-envelope"></i> andreschoque71@gmail.com</p>
                     <div class="social">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/andres.choque23/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/andreschoque23/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/andreschoque3"><i class="fa-brands fa-github"></i></a>
 
                     </div>
                 </div>

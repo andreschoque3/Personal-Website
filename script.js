@@ -1,7 +1,7 @@
 //idk remember 
 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabconts = document.getElementsByClassName("tab-conts");
+let tablinks = document.getElementsByClassName("tab-links");
+let tabconts = document.getElementsByClassName("tab-conts");
 
 function opentab(tabname) {
     for(tablink of tablinks) {
@@ -15,4 +15,14 @@ function opentab(tabname) {
     event.currentTarget.classList.add("act-link");
 
     document.getElementById(tabname).classList.add("act-tab");
+}
+
+let menus = document.getElementById("menus");
+
+function openmenu(){
+    menus.style.right = "0";
+}
+
+function closemenu() {
+    menus.style.right = "-200px";
 }
