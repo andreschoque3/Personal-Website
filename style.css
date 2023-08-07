@@ -110,6 +110,10 @@ nav .fa-solid {
     flex-basis: 60%;
 }
 
+.abt-col-2 p {
+    line-height: 1.8;
+}
+
 .sub-header {
     font-size: 60px;
     font-weight: 600px;
