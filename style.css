@@ -154,7 +154,7 @@ nav .fa-solid {
 }
 
 .tab-conts ul li span {
-    color: #b54769;
+    color: #e0115f;
     font-size: 14px;
 }
 
@@ -337,6 +337,7 @@ form .btncv {
     color: #61b752;
     margin-top: -30px;
     display: block;
+    font-size: 20px;
 }
 
 /**********Responsive section**********/
