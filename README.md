@@ -12,4 +12,4 @@ I built this website using the following:
 
 #
 
-Please follow the link to access the website here: [Andres Choque](https://www.andreschoque-pf.com/)
+Please follow the link to access the website here: [Andres Choque](https://www.andreschoque.com/)
