@@ -1,4 +1,4 @@
-# Portfolio Website
+# Personal Website
 
 I built this website to showcase my Web Dev Skills 👨‍💻 I used the following tools:
 
