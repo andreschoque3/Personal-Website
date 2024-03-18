@@ -21,6 +21,9 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./Images/background-header.jpg);
+    position: relative;
 }
 
 .container {
@@ -34,8 +37,44 @@ nav {
     flex-wrap: wrap;
 }
 
+/* #language-slider {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#language-toggle {
+    -webkit-appearance: none;
+    width: 60px;
+    height: 30px;
+    background: white;
+    border-radius: 15px; 
+    outline: none;
+    opacity: 0.7;
+    top: 10px;
+    transition: opacity 0.2s;
+}
+
+#language-toggle:hover {
+    opacity: 1;
+}
+
+#language-toggle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ef5327;
+    border-radius: 50%;
+    cursor: pointer;
+} */
+
 .logo {
     width: 140px;
+}
+
+path {
+    stroke: white !important;
+    fill: none;
 }
 
 nav ul li {
@@ -71,9 +110,12 @@ nav ul li a:hover::after {
     font-size: 30px;
 }
 
+.header-text p {
+    color: #ef5327;
+}
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 80px;
     margin-top: 20px;
 }
 
@@ -83,6 +125,26 @@ nav ul li a:hover::after {
     font-weight: normal;
 }
 
+.header-btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ef5327;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    position: absolute;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.header-btn:hover {
+    background: #ef5327;
+
+}
+
 nav .fa-solid {
     display: none;
 }
@@ -90,6 +152,10 @@ nav .fa-solid {
 #about {
     padding: 80px 0;
     color: #ababab;
+}
+
+strong {
+    color: white;
 }
 
 .row {
@@ -219,11 +285,11 @@ nav .fa-solid {
 }
 
 /**********Projects section**********/
-#projects {
+#portfolio {
     padding: 50px 0;
 }
 
-.work-list {
+.work-list, .work-list-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -238,15 +304,20 @@ nav .fa-solid {
 
 .work img {
     width: 100%;
+    height: 200px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 
+.button-container {
+    text-align: center;
+}
+
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ef5327);
+    background:  linear-gradient(rgba(0,0,0,0.9), #ef5327);
     border-radius: absolute;
     position: absolute;
     left: 0;
@@ -260,6 +331,7 @@ nav .fa-solid {
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
+    
 }
 
 .layer h3 {
@@ -298,10 +370,19 @@ nav .fa-solid {
     text-decoration: none;
     color: white;
     transition: background 0.5s;
+    cursor: pointer;
 }
 
 .btn:hover {
     background: #ef5327;
+}
+
+.work-list-2 {
+    display: none; /* Initially hide the second row */
+}
+
+.work-list-2.show-row {
+    display: grid;
 }
 
 /**********Contact section**********/
@@ -370,7 +451,6 @@ form .btncv {
     width: 100%;
     text-align: center;
     padding: 20px;
-    background: #262626;
     font-weight: 300;
     margin-top: 40px;
 

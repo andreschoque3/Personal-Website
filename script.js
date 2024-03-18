@@ -29,6 +29,27 @@ function closemenu() {
     menus.style.right = "-200px";
 }
 
+// View more functionality
+
+document.addEventListener('DOMContentLoaded', function() {
+    const viewMoreButton = document.getElementById('view-more');
+    const hideButton = document.getElementById('hide');
+    const secondRow = document.querySelector('.work-list-2');
+
+    viewMoreButton.addEventListener('click', function() {
+        secondRow.classList.add('show-row');
+        hideButton.style.display = 'inline-block';
+        viewMoreButton.style.display = 'none';
+    });
+
+    hideButton.addEventListener('click', function() {
+        secondRow.classList.remove('show-row');
+        hideButton.style.display = 'none';
+        viewMoreButton.style.display = 'inline-block';
+    });
+});
+
+
 // Google Sheets API inspired from https://github.com/jamiewilson/form-to-google-sheets.git
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyiMFJxNG-Oe1735pct_MGwOk1EhP7t5LKAu9u4KHLdk_NqJIPJiSrXQrbs6Lzco8j7/exec'
@@ -43,7 +64,7 @@ function closemenu() {
         submitMsg.innerHTML = "Message Submitted"
         setTimeout(function() {
             submitMsg.innerHTML = ""
-        }, 5000)
+        }, 2000)
         form.reset()
     })
       .catch(error => console.error('Error!', error.message))
