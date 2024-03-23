@@ -1,0 +1,16 @@
+{
+  "header": {
+    "title": "Hi, I'm",
+    "name": "Andres Choque",
+    "subtitle": "Let's build solutions together.",
+    "headerbtnText": "Get started"
+  },
+  "about": {
+    "title": "Who am I",
+    "description": "I am a Software Engineer with a passion for technology, business, travel, and leadership. My specialty is on the Front-End (UX / UI). I believe that any product's quality begins at the User's Experience.",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "languages": "languages"
+  }
+}
