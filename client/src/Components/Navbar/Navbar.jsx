@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import logo from '../Assets/andres-choque-logo.png'
-import { Switch } from 'antd'
 import './Navbar.css'
 
 function Navbar() {
@@ -11,18 +10,6 @@ function Navbar() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
-  // Language toggle
-
-  const [switchBackground, setSwitchBackground] = useState('#262626');
-  
-  const handleSwitchChange = (checked) => {
-    if (checked) {
-      setSwitchBackground('#ef5327');
-    } else {
-      setSwitchBackground('#262626'); 
-    }
   };
 
 
@@ -39,12 +26,6 @@ function Navbar() {
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i className='fas fa-circle-xmark' onClick={toggleMenu}></i>
-                <Switch 
-                style={{background: switchBackground, marginLeft: '10px'}}
-                checkedChildren={<span style={{fontSize: '15px'}}>ES <i className='fas fa-language'></i></span>} 
-                unCheckedChildren={<span style={{fontSize: '15px'}}>EN <i className='fas fa-language'></i></span>} 
-                onChange={handleSwitchChange}
-                />
             </ul>
             <i className='fas fa-bars' onClick={toggleMenu}></i>
         </nav>
