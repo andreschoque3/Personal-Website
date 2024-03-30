@@ -78,6 +78,7 @@ nav .fa-circle-xmark, .fa-bars {
     nav .fa-circle-xmark, .fa-bars {
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
 
     nav ul {

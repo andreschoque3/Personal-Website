@@ -171,7 +171,7 @@ strong {
     transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div i {
+.services-list div svg {
     font-size:  50px;
     margin-bottom: 30px;
 }
@@ -280,6 +280,8 @@ strong {
     color: white;
     transition: background 0.5s;
     cursor: pointer;
+    background-color: transparent;
+    font-size: 15px;
 }
 
 .btn:hover {
@@ -300,7 +302,7 @@ strong {
     margin-top: 30px;
 }
 
-.contact-l p i {
+.contact-l p svg {
     color: #ef5327;
     margin-right: 15px;
     font-size: 25px;

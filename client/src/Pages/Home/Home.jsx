@@ -10,6 +10,10 @@ import workpic3 from './Images/creotec.png'
 import workpic4 from './Images/cfl.png'
 import workpic5 from './Images/github-projects.png'
 import workpic6 from './Images/andres-website.png'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode, faPenRuler, faMicrochip, faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 function Home() {
 
@@ -58,7 +62,8 @@ function Home() {
         setShowMore(false);
     };
 
-  // contact form functionality
+  // Contact form functionality
+
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyiMFJxNG-Oe1735pct_MGwOk1EhP7t5LKAu9u4KHLdk_NqJIPJiSrXQrbs6Lzco8j7/exec';
 
   const handleSubmit = async (e) => {
@@ -84,6 +89,9 @@ function Home() {
     }
 };
 
+  // Icon library
+
+  library.add(faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faInstagram, faLinkedin, faGithub)
 
 
   return (
@@ -95,7 +103,7 @@ function Home() {
               <p>Hi, I'm</p>
               <h1>Andres Choque</h1>
               <h2>Let's build solutions together.</h2>
-              <a href="#contact" className="header-btn">Get started</a> 
+              <a href="#contact" className="header-btn" aria-label='Get-started-button'>Get started</a> 
             </div>
           </div>
         </div>
@@ -104,7 +112,7 @@ function Home() {
           <div className='container'>
             <div className='row'>
               <div className='abt-col-1'>
-                <img src={AbtPic} alt="" />
+                <img src={AbtPic} alt="Andres-Choque-Professional" />
               </div>
               <div className="abt-col-2">
                       <h1 className="sub-header">Who am I</h1>
@@ -147,7 +155,7 @@ function Home() {
                       </div>
                   </div>
                   <div className="resume">
-                      <a onClick={handleDownloadResume} className="btn">Download Resume</a>
+                      <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume</button>
                   </div>
             </div>
           </div> 
@@ -160,19 +168,19 @@ function Home() {
 
             <div className="services-list">
                 <div>
-                    <i className="fas fa-code"></i>
+                    <FontAwesomeIcon icon={faCode}/>
                     <h2><strong>Web & App Development</strong></h2>
                     <p>Web Applications are key for a quality product. I enjoy writing in multiple languages helping the client to reach their goals.</p>
                 </div>
 
                 <div>
-                    <i className="fas fa-pen-ruler"></i>
+                    <FontAwesomeIcon icon={faPenRuler}/>
                     <h2><strong>Web Design</strong></h2>
                     <p>User Experience (UX) is the most important aspect of a quality product. I love designing products using multiple design tools.</p>
                 </div>
 
                 <div>
-                    <i className="fas fa-microchip"></i>
+                    <FontAwesomeIcon icon={faMicrochip}/>
                     <h2><strong>AI Development</strong></h2>
                     <p>With the growth of Artificial Intelligence it's a priority to build software and integrate AI solutions to keep up with innovation.</p>
                 </div>
@@ -187,29 +195,29 @@ function Home() {
 
             <div className='work-list'>
                 <div className="work">
-                    <img src={workpic1} />
+                    <img src={workpic1} alt='Tactica-ministries' />
                     <div className="layer">
                        <h3><strong>TACTICA Ministries</strong></h3>
                        <p>TACTICA Ministries trains and helps the public safety community internationally.</p>
-                       <a href="https://tacticaministries.org/" target="_blank" rel="noreferrer noopener"> <i className="fa-solid fa-link"></i></a> 
+                       <a href="https://tacticaministries.org/" target="_blank" rel="noreferrer noopener" aria-label='Tactica-ministries-website-link'> <FontAwesomeIcon icon={faLink}/></a>
                     </div>
                 </div>
 
                 <div className="work">
-                    <img src={workpic2} />
+                    <img src={workpic2} alt='Drontec' />
                     <div className="layer">
                        <h3><strong>Drontec</strong></h3>
                        <p>Drontec allows customers to purchase highly specialized drones for any task.</p>
-                       <a href="https://drontec.org/" target="_blank" rel="noreferrer noopener"> <i className="fa-solid fa-link"></i></a> 
+                       <a href="https://drontec.org/" target="_blank" rel="noreferrer noopener" aria-label='Drontec-website-link'> <FontAwesomeIcon icon={faLink}/></a> 
                     </div>
                 </div>
 
                 <div className="work">
-                    <img src={workpic3} />
+                    <img src={workpic3} alt='Creotec' />
                     <div className="layer">
                         <h3><strong>CREOTEC</strong></h3>
                         <p>CREOTEC allows customers to purchase prosthetics for the people in need.</p>
-                        <a href="https://creo-tec.com/" target="_blank" rel="noreferrer noopener"> <i className="fa-solid fa-link"></i></a> 
+                        <a href="https://creo-tec.com/" target="_blank" rel="noreferrer noopener" aria-label='Creotec-website-link'> <FontAwesomeIcon icon={faLink}/></a> 
                      </div>
                 </div>
             </div>
@@ -217,37 +225,37 @@ function Home() {
             {showMore && (
             <div className="work-list-2">          
                 <div className="work">
-                    <img src={workpic4} />
+                    <img src={workpic4} alt='Center-for-financial-literacy' />
                     <div className="layer">
                         <h3><strong>Center for Financial Literacy App</strong></h3>
                         <p>CFL App allows you to visualize and budget your finances.</p>
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7061417643429257216/" target="_blank" rel="noreferrer noopener"> <i className="fa-solid fa-link"></i></a> 
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7061417643429257216/" target="_blank" rel="noreferrer noopener" aria-label='Center-for-financial-literacy-linkedin-link'> <FontAwesomeIcon icon={faLink}/></a> 
                      </div>
                 </div>
 
                 <div className="work">
-                    <img src={workpic5} />
+                    <img src={workpic5} alt='Andres-Choque-Github' />
                     <div className="layer">
                         <h3><strong>School Projects</strong></h3>
                         <p>Holds a collection of software built for school.</p>
-                        <a href="https://github.com/andreschoque3/LU-School-Projects" target="_blank" rel="noreferrer noopener"> <i className="fa-solid fa-link"></i></a> 
+                        <a href="https://github.com/andreschoque3/LU-School-Projects" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-github-webpage'> <FontAwesomeIcon icon={faLink}/></a> 
                      </div>
                 </div>
 
                 <div className="work">
-                    <img src={workpic6} />
+                    <img src={workpic6} alt='Andres-Choque-website' />
                     <div className="layer">
                         <h3><strong>Business Website</strong></h3>
                         <p>The website that showcases all the software & solutions provided.</p>
-                        <a href="https://andreschoque.com/" target="_blank" rel="noreferrer noopener"> <i className="fa-solid fa-link"></i></a> 
+                        <a href="https://andreschoque.com/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-website-link'> <FontAwesomeIcon icon={faLink}/></a> 
                      </div>
                 </div>
             </div>
             )}
 
             <div className="button-container">
-              {!showMore && <a className="btn" id="view-more" onClick={handleViewMore}>View more</a>}
-              {showMore && <a className="btn" id="hide" onClick={handleHide}>Hide</a>}
+              {!showMore && <button className="btn" id="view-more" aria-label='View-more-button' onClick={handleViewMore}>View more</button>}
+              {showMore && <button className="btn" id="hide" aria-label='Hide-button' onClick={handleHide}>Hide</button>}
             </div>
 
           </div>
@@ -258,11 +266,11 @@ function Home() {
             <div className='row'>
                 <div className="contact-l">
                     <h1 className="sub-header">Let's Connect</h1>
-                    <p> <i className="fa-solid fa-envelope"></i> andreschoque71@gmail.com</p>
+                    <p><FontAwesomeIcon icon={faEnvelope}/> andreschoque71@gmail.com</p>
                     <div className="social">
-                        <a href="https://www.instagram.com/andres.choque23/" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/andreschoque23/" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/andreschoque3" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/andres.choque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-instagram-account'><FontAwesomeIcon icon={faInstagram}/></a>
+                        <a href="https://www.linkedin.com/in/andreschoque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-linkedin-account'><FontAwesomeIcon icon={faLinkedin}/></a>
+                        <a href="https://github.com/andreschoque3" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-github-account'><FontAwesomeIcon icon={faGithub}/></a>
                     </div>
                 </div>
 
