@@ -7,7 +7,7 @@
 
 
 ## About the website
-![home page](https://github.com/andreschoque3/Personal-Website/blob/main/images/Andres_Choque_Portfolio_Website.png)
+![home page](https://github.com/andreschoque3/Personal-Website/blob/main/client/src/Pages/Images/andres-website.png)
 
 
 ## Website is built with
