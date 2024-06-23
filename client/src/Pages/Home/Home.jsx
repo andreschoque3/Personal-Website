@@ -100,11 +100,16 @@ function Home() {
 
         <Helmet>
           <title>Home - Andres Choque</title>
+          <meta name='description' content="Let's build solutions together" />
+
+           {/* OG Tags */}
           <meta property="og:title" content="Andres Choque's Website" />
           <meta property="og:description" content="Let's build solutions together." />
           <meta property="og:image" content="https://andreschoque.com/static/media/background-header.35708e91d89ba76f59f2.jpg" />
           <meta property="og:url" content="https://andreschoque.com" />
           <meta property="og:type" content="website" />
+
+          {/* Twitter Tags */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Andres Choque's Website" />
           <meta name="twitter:description" content="Let's build solutions together." />
