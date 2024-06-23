@@ -14,8 +14,26 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faPenRuler, faMicrochip, faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
+import { Helmet } from 'react-helmet';
 
 function Home() {
+  
+  // Preview description: 
+  <div>
+    <Helmet>
+      <title>Home - Andres Choque</title>
+      <meta property="og:title" content="Andres Choque's Website" />
+      <meta property="og:description" content="Let's build solutions together." />
+      <meta property="og:image" content="https://andreschoque.com/static/media/background-header.35708e91d89ba76f59f2.jpg" />
+      <meta property="og:url" content="https://andreschoque.com" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Andres Choque's Website" />
+      <meta name="twitter:description" content="Let's build solutions together." />
+      <meta name="twitter:image" content="https://andreschoque.com/static/media/background-header.35708e91d89ba76f59f2.jpg" />
+    </Helmet>
+    <h1>Home - Andres Choque</h1>
+  </div>
 
   // About section functionality
 
