@@ -19,22 +19,6 @@ import { Helmet } from 'react-helmet';
 
 function BlogPost1() {
 
-  // Preview description: 
-  <div>
-    <Helmet>
-      <title>Home - Andres Choque</title>
-      <meta name="description" content="Ways to be intentional after School" />
-      <meta property="og:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
-      <meta property="og:description" content="Ways to be intentional after School" />
-      <meta property="og:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
-      <meta property="og:url" content="https://andreschoque.com/home" />
-      <meta name="twitter:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
-      <meta name="twitter:description" content="Ways to be intentional after School" />
-      <meta name="twitter:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
-    </Helmet>
-    <h1>How to be Intentional After School (with 3 effective steps) - Andres Choque</h1>
-  </div>
-
   // browser tab title
   useEffect(() => {
     document.title = 'How to be Intentional After School (with 3 effective steps)';
@@ -94,6 +78,19 @@ function BlogPost1() {
 
   return (
     <div>
+
+      <Helmet>
+            <title>Home - Andres Choque</title>
+            <meta name="description" content="Ways to be Intentional After School" />
+            <meta property="og:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
+            <meta property="og:description" content="Ways to be Intentional After School" />
+            <meta property="og:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
+            <meta property="og:url" content="https://andreschoque.com/home" />
+            <meta name="twitter:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
+            <meta name="twitter:description" content="Ways to be Intentional After School" />
+            <meta name="twitter:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
+      </Helmet>
+      
       <div className='blog-post-header'>
         <div className='container'>
           <div className='navbar'>

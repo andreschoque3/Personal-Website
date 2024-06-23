@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
 
 function Blog() {
 
@@ -61,6 +62,20 @@ function Blog() {
 
   return (
     <div>
+
+      <Helmet>
+          <title>Blog - Andres Choque</title>
+          <meta property="og:title" content="Andres Choque's Website" />
+          <meta property="og:description" content="Collection of thoughts and observations." />
+          <meta property="og:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
+          <meta property="og:url" content="https://andreschoque.com" />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Andres Choque's Website" />
+          <meta name="twitter:description" content="Collection of thoughts and observations." />
+          <meta name="twitter:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
+      </Helmet>
+
       <div className='blog-header'>
         <div className='container'>
           <div className='navbar'>
