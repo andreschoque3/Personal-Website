@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../Components/Assets/andres-choque-logo.png'
 import blog1 from '../Blog/Images/blog1.jpg'
 import '../../Components/Navbar/Navbar.css'
@@ -11,6 +11,11 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Blog() {
+
+  // browser tab title
+  useEffect(() => {
+    document.title = 'Blog Posts';
+  }, []);
 
   // Menu functionality
 
