@@ -13,7 +13,7 @@ import workpic6 from './Images/andres-website.png'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faPenRuler, faMicrochip, faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faInstagram, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
 
 function Home() {
 
@@ -91,7 +91,7 @@ function Home() {
 
   // Icon library
 
-  library.add(faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faInstagram, faLinkedin, faGithub)
+  library.add(faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faInstagram, faLinkedin, faGithub, faXTwitter)
 
 
   return (
@@ -261,6 +261,26 @@ function Home() {
           </div>
         </div>
 
+        {/* <div className='review-section' id='reviews'>
+          <div className='container'>
+            <h1 className='sub-header'>Reviews</h1>
+
+            <div className="services-list">
+                <div>
+                    
+                </div>
+
+                <div>
+                    
+                </div>
+
+                <div>
+                    
+                </div>
+            </div>
+          </div>
+        </div> */}
+
         <div className='contact-section' id='contact'>
           <div className='container'>
             <div className='row'>
@@ -269,6 +289,7 @@ function Home() {
                     <p><FontAwesomeIcon icon={faEnvelope}/> andreschoque71@gmail.com</p>
                     <div className="social">
                         <a href="https://www.instagram.com/andres.choque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-instagram-account'><FontAwesomeIcon icon={faInstagram}/></a>
+                        <a href="https://twitter.com/andres_choque23" target='_blank' rel='noreferrer noopener' aria-label='Andres-choque-twitter-account'><FontAwesomeIcon icon={faXTwitter}/></a>
                         <a href="https://www.linkedin.com/in/andreschoque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-linkedin-account'><FontAwesomeIcon icon={faLinkedin}/></a>
                         <a href="https://github.com/andreschoque3" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-github-account'><FontAwesomeIcon icon={faGithub}/></a>
                     </div>

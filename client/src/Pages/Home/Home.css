@@ -213,7 +213,7 @@ strong {
 
 .work img {
     width: 100%;
-    height: 200px;
+    height: auto;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;

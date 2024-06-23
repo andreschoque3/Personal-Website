@@ -3,6 +3,8 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Home from './Pages/Home/Home';
+import Blog from './Pages/Blog/Blog';
+import BlogPost1 from './Pages/Blog/Posts/BlogPost1';
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+          <Route path='/blog/how-to-be-intentional-after-school' element={<BlogPost1/>}/>
         </Routes>
       </BrowserRouter>
       <ToastContainer/>

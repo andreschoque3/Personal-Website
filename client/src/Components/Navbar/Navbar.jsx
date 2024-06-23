@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../Assets/andres-choque-logo.png'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faBars } from '@fortawesome/free-solid-svg-icons'
@@ -29,6 +30,7 @@ function Navbar() {
             <ul className={menuOpen ? "active" : ""}>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><Link to='/blog'>Blog</Link></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
