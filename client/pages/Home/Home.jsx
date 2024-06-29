@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./Home.css"
+import "./Home.module.css"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../../Components/Navbar/Navbar'
@@ -14,7 +14,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faPenRuler, faMicrochip, faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
-import { Helmet } from 'react-helmet';
+import Head from 'next/head'
+
 
 function Home() {
 
@@ -98,7 +99,7 @@ function Home() {
   return (
     <div>
 
-        <Helmet>
+        <Head>
           <title>Home - Andres Choque</title>
           <meta name='description' content="Let's build solutions together" />
 
@@ -114,7 +115,7 @@ function Home() {
           <meta name="twitter:title" content="Andres Choque's Website" />
           <meta name="twitter:description" content="Let's build solutions together." />
           <meta name="twitter:image" content="https://andreschoque.com/static/media/background-header.35708e91d89ba76f59f2.jpg" />
-        </Helmet>
+        </Head>
 
 
         <div className='header-section' id='header'>

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../Components/Assets/andres-choque-logo.png'
-import blog1 from '../Blog/Images/blog1.jpg'
-import '../../Components/Navbar/Navbar.css'
-import './Blog.css'
+import blog1 from './Images/blog1.jpg'
+import '../../Components/Navbar/Navbar.module.css'
+import './Blog.module.css'
 import { Link } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head'
 
 function Blog() {
 
@@ -60,10 +60,17 @@ function Blog() {
     }
   };
 
+  // Meta tags:
+  // const blogTitle = "Blog - Andres Choque";
+  // const blogDescription = "Collection of thoughts and reflections.";
+  // const blogImageUrl = 'https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg'; 
+  // const blogUrl = 'https://andreschoque.com/blog'; 
+
+
   return (
     <div>
 
-      <Helmet>
+      <Head>
           <title>Blog - Andres Choque</title>
           <meta name="description" content="Collection of thoughts and reflections" />
 
@@ -79,7 +86,7 @@ function Blog() {
           <meta name="twitter:title" content="Andres Choque's Website" />
           <meta name="twitter:description" content="Collection of thoughts and observations." />
           <meta name="twitter:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
-      </Helmet>
+      </Head>
 
       <div className='blog-header'>
         <div className='container'>
