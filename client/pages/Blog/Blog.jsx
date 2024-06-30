@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Head from 'next/head'
 
 function Blog() {
 
@@ -69,25 +68,6 @@ function Blog() {
 
   return (
     <div>
-
-      <Head>
-          <title>Blog - Andres Choque</title>
-          <meta name="description" content="Collection of thoughts and reflections" />
-
-          {/* OG Tags */}
-          <meta property="og:title" content="Andres Choque's Website" />
-          <meta property="og:description" content="Collection of thoughts and reflections" />
-          <meta property="og:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
-          <meta property="og:url" content="https://andreschoque.com" />
-          <meta property="og:type" content="website" />
-
-          {/* Twitter Tags */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Andres Choque's Website" />
-          <meta name="twitter:description" content="Collection of thoughts and observations." />
-          <meta name="twitter:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
-      </Head>
-
       <div className='blog-header'>
         <div className='container'>
           <div className='navbar'>
