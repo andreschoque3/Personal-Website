@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../Assets/andres-choque-logo.png'
-import './Navbar.module.css'
+import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
