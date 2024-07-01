@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../Components/Assets/andres-choque-logo.png'
 import blog1 from '../Blog/Images/blog1.jpg'
+import blog2 from '../Blog/Images/blog2.jpg'
 import '../../Components/Navbar/Navbar.css'
 import './Blog.css'
 import { Link } from 'react-router-dom'
@@ -19,7 +20,6 @@ function Blog() {
   }, []);
 
   // Menu functionality
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -27,7 +27,6 @@ function Blog() {
   };
 
   // Add the icons
-
   library.add(faCircleXmark, faBars)
 
   // Email functionality
@@ -102,7 +101,7 @@ function Blog() {
           </div>
         </div>
         <div className='blog-title'>
-          <h1>Beyond Boundries</h1>
+          <h1>Beyond Boundaries</h1>
           <p>Navigating life's adventures through Business, Technology, Lifestyle, and Digital Ventures.</p>
         </div>
       </div>
@@ -118,6 +117,17 @@ function Blog() {
         </div>
 
         <div className='blog-list'>
+          <div className='blog'>
+            <img src={blog2} alt="" />
+            <h3>Why Travel is Important and Where You Should Consider Going</h3>
+            <p className='description'>Traveling not only opens up opportunities such as work, friendships, and exploration but also broadens your mindset.</p>
+            <div className='blog-link'>
+              <Link to={'/blog/why-travel-is-important'}>Read Full Post</Link>
+            </div>
+            <hr />
+            <p className='author'>Andres Choque &nbsp; • &nbsp; June 30, 2024</p>
+          </div>
+
           <div className='blog'>
             <img src={blog1} alt="" />
             <h3>How to be Intentional After School (with 3 effective steps)</h3>

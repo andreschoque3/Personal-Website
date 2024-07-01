@@ -4,7 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Home from './Pages/Home/Home';
 import Blog from './Pages/Blog/Blog';
-import BlogPost1 from './Pages/Blog/Posts/BlogPost1';
+import BlogPost1 from './Pages/Posts/BlogPost1';
+import BlogPost2 from './Pages/Posts/BlogPost2';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/blog' element={<Blog/>}/>
           <Route path='/blog/how-to-be-intentional-after-school' element={<BlogPost1/>}/>
+          <Route path='/blog/why-travel-is-important' element={<BlogPost2/>}/>
         </Routes>
       </BrowserRouter>
       <ToastContainer/>

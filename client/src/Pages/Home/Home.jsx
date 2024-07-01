@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Home.css"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,26 +17,13 @@ import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-
 import { Helmet } from 'react-helmet';
 
 function Home() {
-  
-  // Preview description: 
-  <div>
-    <Helmet>
-      <title>Home - Andres Choque</title>
-      <meta property="og:title" content="Andres Choque's Website" />
-      <meta property="og:description" content="Let's build solutions together." />
-      <meta property="og:image" content="https://andreschoque.com/static/media/background-header.35708e91d89ba76f59f2.jpg" />
-      <meta property="og:url" content="https://andreschoque.com" />
-      <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Andres Choque's Website" />
-      <meta name="twitter:description" content="Let's build solutions together." />
-      <meta name="twitter:image" content="https://andreschoque.com/static/media/background-header.35708e91d89ba76f59f2.jpg" />
-    </Helmet>
-    <h1>Home - Andres Choque</h1>
-  </div>
+
+  // browser tab title
+  useEffect(() => {
+    document.title = 'Home - Andres Choque';
+  }, []);
 
   // About section functionality
-
   const [activeTab, setActiveTab] = useState('skills');
 
     const openTab = (tabName) => {
@@ -69,7 +56,6 @@ function Home() {
   };
 
   // View more functionality
-
   const [showMore, setShowMore] = useState(false);
 
     const handleViewMore = () => {
@@ -81,7 +67,6 @@ function Home() {
     };
 
   // Contact form functionality
-
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyiMFJxNG-Oe1735pct_MGwOk1EhP7t5LKAu9u4KHLdk_NqJIPJiSrXQrbs6Lzco8j7/exec';
 
   const handleSubmit = async (e) => {
@@ -108,7 +93,6 @@ function Home() {
 };
 
   // Icon library
-
   library.add(faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faInstagram, faLinkedin, faGithub, faXTwitter)
 
 

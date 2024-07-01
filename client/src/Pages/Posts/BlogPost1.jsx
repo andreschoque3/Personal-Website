@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../../Components/Assets/andres-choque-logo.png'
-import '../../../Components/Navbar/Navbar.css'
-import '../Blog.css'
+import logo from '../../Components/Assets/andres-choque-logo.png'
+import '../../Components/Navbar/Navbar.css'
+import '../Blog/Blog.css'
 import { Link } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,29 +19,12 @@ import { Helmet } from 'react-helmet';
 
 function BlogPost1() {
 
-  // Preview description: 
-  <div>
-    <Helmet>
-      <title>Home - Andres Choque</title>
-      <meta name="description" content="Ways to be intentional after School" />
-      <meta property="og:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
-      <meta property="og:description" content="Ways to be intentional after School" />
-      <meta property="og:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
-      <meta property="og:url" content="https://andreschoque.com/home" />
-      <meta name="twitter:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
-      <meta name="twitter:description" content="Ways to be intentional after School" />
-      <meta name="twitter:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
-    </Helmet>
-    <h1>How to be Intentional After School (with 3 effective steps) - Andres Choque</h1>
-  </div>
-
   // browser tab title
   useEffect(() => {
     document.title = 'How to be Intentional After School (with 3 effective steps)';
   }, []);
 
   // Menu functionality
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -49,11 +32,9 @@ function BlogPost1() {
   };
 
   // Add the icons
-
   library.add(faCircleXmark, faBars, faArrowUpFromBracket, faLinkedin, faXTwitter, faFacebookSquare)
 
   //copy link to clipboard
-
   const currentUrl = window.location.href;
 
   const copyToClipboard = () => {
@@ -103,7 +84,7 @@ function BlogPost1() {
         <meta property="og:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
         <meta property="og:description" content="Ways to be Intentional After School" />
         <meta property="og:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
-        <meta property="og:url" content="https://andreschoque.com/blog/post1" />
+        <meta property="og:url" content="https://andreschoque.com/blog/how-to-be-intentional-after-school" />
         
         {/* Twitter Tags */}
         <meta name="twitter:card" content="summary_large_image" />
