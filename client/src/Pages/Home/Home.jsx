@@ -101,7 +101,7 @@ function Home() {
 
         <Helmet>
           <title>Home - Andres Choque</title>
-          <meta name='description' content="Let's build solutions together" />
+          <meta name='description' content="Let's build solutions together." />
 
            {/* OG Tags */}
           <meta property="og:title" content="Andres Choque's Website" />
