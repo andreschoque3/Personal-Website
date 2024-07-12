@@ -69,6 +69,11 @@
 
 .blog-link a {
     text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.blog-link a:hover {
     color: #ef5327;
 }
 

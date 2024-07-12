@@ -18,6 +18,7 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "react-share": "^5.1.0",
+    "react-snap": "^1.23.0",
     "react-toastify": "^10.0.5",
     "web-vitals": "^2.1.4"
   },
@@ -25,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [

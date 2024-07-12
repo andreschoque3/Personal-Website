@@ -91,6 +91,7 @@ function BlogPost1() {
         <meta name="twitter:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
         <meta name="twitter:description" content="Ways to be Intentional After School." />
         <meta name="twitter:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
+        <meta name="twitter:url" content="https://andreschoque.com/blog/how-to-be-intentional-after-school"/>
       </Helmet>
 
       
@@ -404,7 +405,7 @@ function BlogPost1() {
 
             <p>Blessings,</p>
 
-            <p><em>Andres</em></p>
+            <p>- <em> Andres</em></p>
 
             <hr />
             </div>

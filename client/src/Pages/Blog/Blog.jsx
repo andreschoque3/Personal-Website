@@ -70,7 +70,7 @@ function Blog() {
           <meta property="og:title" content="Blog - Andres Choque" />
           <meta property="og:description" content="Collection of thoughts and reflections." />
           <meta property="og:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
-          <meta property="og:url" content="https://andreschoque.com" />
+          <meta property="og:url" content="https://andreschoque.com/blog" />
           <meta property="og:type" content="website" />
 
           {/* Twitter Tags */}
@@ -78,6 +78,7 @@ function Blog() {
           <meta name="twitter:title" content="Blog - Andres Choque" />
           <meta name="twitter:description" content="Collection of thoughts and observations." />
           <meta name="twitter:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
+          <meta name="twitter:url" content="https://andreschoque.com/blog"/>
       </Helmet>
 
       <div className='blog-header'>
@@ -119,13 +120,13 @@ function Blog() {
         <div className='blog-list'>
           <div className='blog'>
             <img src={blog2} alt="" />
-            <h3>Why Travel is Important and Where You Should Consider Going</h3>
+            <h3>The Value of Travel and Where You Should Consider Going</h3>
             <p className='description'>Traveling not only opens up opportunities such as work, friendships, and exploration but also broadens your mindset.</p>
             <div className='blog-link'>
-              <Link to={'/blog/why-travel-is-important'}>Read Full Post</Link>
+              <Link to={'/blog/the-value-of-travel'}>Read Full Post</Link>
             </div>
             <hr />
-            <p className='author'>Andres Choque &nbsp; • &nbsp; June 30, 2024</p>
+            <p className='author'>Andres Choque &nbsp; • &nbsp; July 7, 2024</p>
           </div>
 
           <div className='blog'>
