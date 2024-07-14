@@ -16,7 +16,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/blog' element={<Blog/>}/>
           <Route path='/blog/how-to-be-intentional-after-school' element={<BlogPost1/>}/>
-          <Route path='/blog/why-travel-is-important' element={<BlogPost2/>}/>
+          <Route path='/blog/the-value-of-travel' element={<BlogPost2/>}/>
         </Routes>
       </BrowserRouter>
       <ToastContainer/>

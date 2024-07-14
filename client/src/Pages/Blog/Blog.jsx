@@ -126,7 +126,7 @@ function Blog() {
               <Link to={'/blog/the-value-of-travel'}>Read Full Post</Link>
             </div>
             <hr />
-            <p className='author'>Andres Choque &nbsp; • &nbsp; July 7, 2024</p>
+            <p className='author'>Andres Choque &nbsp; • &nbsp; July 14, 2024</p>
           </div>
 
           <div className='blog'>

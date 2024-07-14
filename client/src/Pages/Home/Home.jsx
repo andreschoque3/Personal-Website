@@ -163,7 +163,7 @@ function Home() {
                       <div className={`tab-conts ${activeTab === 'experience' ? 'act-tab' : ''}`} id="experience">
                           <ul>
                               <li><span>Oct. 2023 &nbsp;-&nbsp; Present</span><br/>Freelance Web Developer</li>
-                              <li><span>Sep. 2023 &nbsp;-&nbsp; Present</span><br/>Junior Software Engineer | CyberZek</li>
+                              <li><span>Sep. 2023 &nbsp;-&nbsp; Present</span><br/>Software Engineer I | CyberZek</li>
                               <li><span>July 2023 &nbsp;-&nbsp; Sep 2023</span><br/>Software Engineer Intern | CyberZek</li>
                               <li><span>May 2022 &nbsp;-&nbsp; Aug 2022</span><br/>Software Developer Intern | Samaritan's Purse</li>
                               <li><span>May 2021 &nbsp;-&nbsp; Jul 2021</span><br/>Web Developer Intern | CREOTEC</li>
