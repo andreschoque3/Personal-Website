@@ -193,3 +193,19 @@
 .link {
     color: #ef5327;
 }
+
+/**********Responsive section**********/
+
+@media screen and (max-width: 800px) {
+    .blog-title h1 {
+        font-size: 35px;
+    }
+
+    .blog-title p {
+        font-size: 25px;
+    }
+
+    .subscriber-container form input {
+        width: 50%;
+    }
+}
