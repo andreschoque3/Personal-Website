@@ -146,7 +146,7 @@ function BlogPost2() {
           <hr />
 
           <div className='blog-body'>
-            <div className='container'>
+            <div className='container-blog'>
             <p>The other day, I was talking to one of my international friends and we had a great conversation on the topic of traveling.</p>
 
             <p>He mentioned lately on his Instagram feed is his friends are traveling to exotic places in Europe.</p>

@@ -27,6 +27,10 @@
     margin-bottom: 40px;
 } */
 
+.container-blog {
+    padding: 10px 20%;
+}
+
 .blog-list {
     display: flex;
     justify-content: center;

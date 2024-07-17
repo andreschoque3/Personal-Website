@@ -146,7 +146,7 @@ function BlogPost1() {
           <hr />
 
           <div className='blog-body'>
-            <div className='container'>
+            <div className='container-blog'>
             <p>Let’s picture this – it’s THE fateful day, you wake up get ready and head over to the venue or location your graduation ceremony is being conducted, you feel excited and anxious at the same time. </p>
 
             <p>You are about to embark on a new chapter after completing this one. You give a last glance at the long nights of studying, preparing for exams, and late-night hangouts with your friends.</p>
