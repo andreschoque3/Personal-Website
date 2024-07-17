@@ -33,7 +33,7 @@ function Home() {
     const handleDownloadResume = async () => {
       try {
           // Fetch the resume file from the public folder
-          const response = await fetch('/Andres-Choque-Resume.pdf');
+          const response = await fetch('/Andres_Choque_Resume_2024.pdf');
           const blob = await response.blob();
 
           // Create a URL for the blob object
