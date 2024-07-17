@@ -42,7 +42,7 @@ function Home() {
           // Create an anchor element with the URL and trigger download
           const link = document.createElement('a');
           link.href = url;
-          link.setAttribute('download', 'Andres-Choque-Resume.pdf');
+          link.setAttribute('download', "Andres Choque Resume 2024.pdf");
           document.body.appendChild(link);
           link.click();
 
