@@ -73,14 +73,14 @@ function BlogPost3() {
             {/* OG Tags */}
             <meta property="og:title" content="You Are One Mentor Away From Changing Your Life (Growth is Inevitable) - Andres Choque" />
             <meta property="og:description" content="How to Get a Mentor to Improve Your Life." />
-            <meta property="og:image" content="https://andreschoque.com/static/media/" />
+            <meta property="og:image" content="https://andreschoque.com/static/media/blog3.2991cee7e0f37b52c2b8.jpg" />
             <meta property="og:url" content="https://andreschoque.com/blog/you-are-one-mentor-away-from-changing-your-life" />
             
             {/* Twitter Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="You Are One Mentor Away From Changing Your Life (Growth is Inevitable) - Andres Choque" />
             <meta name="twitter:description" content="How to Get a Mentor to Improve Your Life." />
-            <meta name="twitter:image" content="https://andreschoque.com/static/media/" />
+            <meta name="twitter:image" content="https://andreschoque.com/static/media/blog3.2991cee7e0f37b52c2b8.jpg" />
             <meta name="twitter:url" content="https://andreschoque.com/blog/you-are-one-mentor-away-from-changing-your-life"/>
         </Helmet>
 
