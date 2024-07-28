@@ -181,8 +181,7 @@ function Home() {
                       <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume</button>
                   </div>
             </div>
-          </div> 
-
+          </div>
         </div>
 
         <div className='services-section' id='services'>
@@ -208,7 +207,6 @@ function Home() {
                     <p>With the growth of Artificial Intelligence it's a priority to build software and integrate AI solutions to keep up with innovation.</p>
                 </div>
             </div>
-
           </div>
         </div>
 
@@ -284,26 +282,6 @@ function Home() {
           </div>
         </div>
 
-        {/* <div className='review-section' id='reviews'>
-          <div className='container'>
-            <h1 className='sub-header'>Reviews</h1>
-
-            <div className="services-list">
-                <div>
-                    
-                </div>
-
-                <div>
-                    
-                </div>
-
-                <div>
-                    
-                </div>
-            </div>
-          </div>
-        </div> */}
-
         <div className='contact-section' id='contact'>
           <div className='container'>
             <div className='row'>
@@ -327,7 +305,6 @@ function Home() {
                     </form>
                     <span id="submit-msg"></span>
                 </div>
-
             </div>
           </div>
 
