@@ -1,33 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../Components/Assets/andres-choque-logo.png'
 import blog1 from '../Blog/Images/blog1.jpg'
 import blog2 from '../Blog/Images/blog2.jpg'
+import blog3 from '../Blog/Images/blog3.jpg'
 import '../../Components/Navbar/Navbar.css'
 import './Blog.css'
 import { Link } from 'react-router-dom'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
+import Navbar from '../../Components/Navbar/Navbar';
 
 function Blog() {
 
   // browser tab title
   useEffect(() => {
-    document.title = 'Blog Posts';
+    document.title = 'Blog - Andres Choque';
   }, []);
-
-  // Menu functionality
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  // Add the icons
-  library.add(faCircleXmark, faBars)
 
   // Email functionality
   const onSubmit = async (event) => {
@@ -83,27 +71,11 @@ function Blog() {
 
       <div className='blog-header'>
         <div className='container'>
-          <div className='navbar'>
-          <nav>
-              <a href='#header'>
-                  <img src={logo} alt="Andres-Choque-Logo" className='logo'/>
-              </a>
-              <ul className={menuOpen ? "active" : ""}>
-                  <li><Link to="/#header">Home</Link></li>
-                  <li><Link to="/">About</Link></li>
-                  <li><Link to='/blog'>Blog</Link></li>
-                  <li><Link to="/">Services</Link></li>
-                  <li><Link to="/">Portfolio</Link></li>
-                  <li><Link to="/">Contact</Link></li>
-                  <FontAwesomeIcon icon={faCircleXmark} onClick={toggleMenu}/>
-              </ul>
-              <FontAwesomeIcon icon={faBars} onClick={toggleMenu}/>
-          </nav>
-          </div>
+          <Navbar/>
         </div>
         <div className='blog-title'>
           <h1>Beyond Boundaries</h1>
-          <p>Navigating life's adventures through Business, Technology, Lifestyle, and Digital Ventures.</p>
+          <p>Navigating life's adventures through Business, Technology, Lifestyle, and Digital ventures.</p>
         </div>
       </div>
 
@@ -119,7 +91,18 @@ function Blog() {
 
         <div className='blog-list'>
           <div className='blog'>
-            <img src={blog2} alt="" />
+            <img src={blog3} alt="Blog-card-1" />
+            <h3>You Are One Mentor Away From Changing Your Life (Growth is Inevitable)</h3>
+            <p className='description'>When you have the right person in your life, your doors in life will begin to open. A mindset shift will begin to happen.</p>
+            <div className='blog-link'>
+              <Link to={'/blog/you-are-one-mentor-away-from-changing-your-life'}>Read Full Post</Link>
+            </div>
+            <hr />
+            <p className='author'>Andres Choque &nbsp; • &nbsp; July 28, 2024</p>
+          </div>
+
+          <div className='blog'>
+            <img src={blog2} alt="Blog-card-2" />
             <h3>The Value of Travel and Where You Should Consider Going</h3>
             <p className='description'>Traveling not only opens up opportunities such as work, friendships, and exploration but also broadens your mindset.</p>
             <div className='blog-link'>
@@ -130,8 +113,8 @@ function Blog() {
           </div>
 
           <div className='blog'>
-            <img src={blog1} alt="" />
-            <h3>How to be Intentional After School (with 3 effective steps)</h3>
+            <img src={blog1} alt="Blog-card-3" />
+            <h3>How to be Intentional After School (With 3 Effective Steps)</h3>
             <p className='description'>Most people feel 'stuck' after school finishes. Explore these strategies that help you get closer to your goals.</p>
             <div className='blog-link'>
               <Link to={'/blog/how-to-be-intentional-after-school'}>Read Full Post</Link>

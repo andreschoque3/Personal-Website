@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../../Components/Assets/andres-choque-logo.png'
+import React, { useEffect } from 'react';
 import '../../Components/Navbar/Navbar.css'
 import '../Blog/Blog.css'
 import { Link } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleXmark, faBars, faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faXTwitter, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,24 +14,18 @@ import {
   FacebookShareButton,
 } from 'react-share';
 import { Helmet } from 'react-helmet';
+import Navbar from '../../Components/Navbar/Navbar';
 
 
 function BlogPost1() {
 
   // browser tab title
   useEffect(() => {
-    document.title = 'How to be Intentional After School (with 3 effective steps)';
+    document.title = 'How to be Intentional After School (With 3 Effective Steps)';
   }, []);
 
-  // Menu functionality
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   // Add the icons
-  library.add(faCircleXmark, faBars, faArrowUpFromBracket, faLinkedin, faXTwitter, faFacebookSquare)
+  library.add(faArrowUpFromBracket, faLinkedin, faXTwitter, faFacebookSquare)
 
   //copy link to clipboard
   const currentUrl = window.location.href;
@@ -77,18 +70,18 @@ function BlogPost1() {
     <div>
 
       <Helmet>
-        <title>How to be Intentional After School (with 3 effective steps) - Andres Choque</title>
+        <title>How to be Intentional After School (With 3 Effective Steps) - Andres Choque</title>
         <meta name="description" content="Ways to be Intentional After School." />
         
         {/* OG Tags */}
-        <meta property="og:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
+        <meta property="og:title" content="How to be Intentional After School (With 3 Effective Steps) - Andres Choque" />
         <meta property="og:description" content="Ways to be Intentional After School." />
         <meta property="og:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
         <meta property="og:url" content="https://andreschoque.com/blog/how-to-be-intentional-after-school" />
         
         {/* Twitter Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="How to be Intentional After School (with 3 effective steps) - Andres Choque" />
+        <meta name="twitter:title" content="How to be Intentional After School (With 3 Effective Steps) - Andres Choque" />
         <meta name="twitter:description" content="Ways to be Intentional After School." />
         <meta name="twitter:image" content="https://andreschoque.com/static/media/blog1.cf50d92bc2ab70c1d5fa.jpg" />
         <meta name="twitter:url" content="https://andreschoque.com/blog/how-to-be-intentional-after-school"/>
@@ -97,23 +90,7 @@ function BlogPost1() {
       
       <div className='blog-post-header'>
         <div className='container'>
-          <div className='navbar'>
-          <nav>
-              <a href='#header'>
-                  <img src={logo} alt="Andres-Choque-Logo" className='logo'/>
-              </a>
-              <ul className={menuOpen ? "active" : ""}>
-                  <li><Link to="/#header">Home</Link></li>
-                  <li><Link to="/">About</Link></li>
-                  <li><Link to='/blog'>Blog</Link></li>
-                  <li><Link to="/">Services</Link></li>
-                  <li><Link to="/">Portfolio</Link></li>
-                  <li><Link to="/">Contact</Link></li>
-                  <FontAwesomeIcon icon={faCircleXmark} onClick={toggleMenu}/>
-              </ul>
-              <FontAwesomeIcon icon={faBars} onClick={toggleMenu}/>
-          </nav>
-          </div>
+          <Navbar/>
         </div>
       </div>
 
@@ -128,7 +105,7 @@ function BlogPost1() {
         </div>
 
         <div className='blog-content-container'>
-          <h1><strong>How to be Intentional After School (with 3 effective steps)</strong></h1>
+          <h1><strong>How to be Intentional After School (With 3 Effective Steps)</strong></h1>
           <h2>June 23, 2024 | Andres Choque</h2> 
 
           <div className='socials'>
