@@ -231,7 +231,7 @@ function BlogPost3() {
 
                     <br />
 
-                    <p>Arguably, this is the hardest step. You will need to demonstrate that you are committed and that you care about what you want to become. As mentioned, in my Article on Intentionality you can read <Link className='link' to='/blog/how-to-be-intentional-after-school' target="_blank" rel="noreferrer noopener" aria-label='link-to-article'>here</Link> Once you get momentum you will never stop. The mentor will keep you accountable.</p>
+                    <p>Arguably, this is the hardest step. You will need to demonstrate that you are committed and that you care about what you want to become. As mentioned, in my Article on Intentionality you can read <Link className='link' to='/blog/how-to-be-intentional-after-school' target="_blank" rel="noreferrer noopener" aria-label='link-to-article'>here</Link>. Once you get momentum you will never stop. The mentor will keep you accountable.</p>
 
                     <br />
                     

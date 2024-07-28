@@ -20,13 +20,6 @@
     margin-top: 20px;
 }
 
-/* .blog-section h1 {
-    text-align: center;
-    font-size: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-} */
-
 .container-blog {
     padding: 10px 20%;
 }
@@ -135,7 +128,7 @@
 .blog-content-container h1 {
     margin-top: 40px;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .blog-content-container h2 {
@@ -206,15 +199,50 @@
 /**********Responsive section**********/
 
 @media screen and (max-width: 800px) {
+    .blog-header {
+        height: 80vh;
+    }
+
+
     .blog-title h1 {
         font-size: 35px;
     }
 
     .blog-title p {
-        font-size: 25px;
+        font-size: 15px;
+        padding: 10px 10%;
+        line-height: 30px;
     }
+
+    
 
     .subscriber-container form input {
         width: 50%;
     }
+
+    .blog-content-container h1 {
+        font-size: 24px;
+    }
+
+    .blog-content-container h2 {
+        font-size: 20px;
+    }
+
+    .blog-body p {
+        font-size: 15px;
+    }
+
+    .container-blog {
+        padding: 10px 10%;
+    }
+
+    .subscriber-container h1 {
+        font-size: 24px;
+    }
+
+    .subscriber-container p {
+        font-size: 15px;
+    }
+
+
 }
