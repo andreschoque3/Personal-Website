@@ -176,10 +176,10 @@ function Home() {
                               <li><span>March 2023</span><br/>Certification Responsive Web Design | FreeCodeCamp</li>
                           </ul>
                       </div>
-                  </div>
-                  <div className="resume">
-                      <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume</button>
-                  </div>
+              </div>
+              <div className="resume">
+                <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume</button>
+              </div>
             </div>
           </div>
         </div>

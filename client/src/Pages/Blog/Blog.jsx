@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import blog1 from '../Blog/Images/blog1.jpg'
 import blog2 from '../Blog/Images/blog2.jpg'
 import blog3 from '../Blog/Images/blog3.jpg'
+import blog4 from '../Blog/Images/blog4.jpg'
 import '../../Components/Navbar/Navbar.css'
 import './Blog.css'
 import { Link } from 'react-router-dom'
@@ -84,16 +85,25 @@ function Blog() {
           <h1>Get the Latest News Straight to You</h1>
           <p>Join to get a dose of inspiration, insights, and a fresh perspective on life and business.</p>
           <form onSubmit={onSubmit}>
-            <input type="text" name="Blog-Subcriber-Email" id="" placeholder='Your Email' />
+            <input type="email" name="Blog-Subcriber-Email" id="" placeholder='Your Email' required />
             <button type='submit'>Join</button>
           </form>
         </div>
 
         <div className='blog-list'>
           <div className='blog'>
-            <img src={blog3} alt="Blog-card-1" />
+            <img src={blog4} alt="Blog-card-1" />
+            <h3>Why Learn Code? You Solve Problems 50% Faster</h3>
+            <div className='blog-link'>
+              <Link to={'/blog/why-learn-code-you-will-solve-problems-50-faster'}>Read Full Post</Link>
+            </div>
+            <hr />
+            <p className='author'>Andres Choque &nbsp; • &nbsp; August 8, 2024</p>
+          </div>
+
+          <div className='blog'>
+            <img src={blog3} alt="Blog-card-2" />
             <h3>You Are One Mentor Away From Changing Your Life (Growth is Inevitable)</h3>
-            <p className='description'>When you have the right person in your life, your doors in life will begin to open. A mindset shift will begin to happen.</p>
             <div className='blog-link'>
               <Link to={'/blog/you-are-one-mentor-away-from-changing-your-life'}>Read Full Post</Link>
             </div>
@@ -102,9 +112,8 @@ function Blog() {
           </div>
 
           <div className='blog'>
-            <img src={blog2} alt="Blog-card-2" />
+            <img src={blog2} alt="Blog-card-3" />
             <h3>The Value of Travel and Where You Should Consider Going</h3>
-            <p className='description'>Traveling not only opens up opportunities such as work, friendships, and exploration but also broadens your mindset.</p>
             <div className='blog-link'>
               <Link to={'/blog/the-value-of-travel'}>Read Full Post</Link>
             </div>
@@ -113,9 +122,8 @@ function Blog() {
           </div>
 
           <div className='blog'>
-            <img src={blog1} alt="Blog-card-3" />
+            <img src={blog1} alt="Blog-card-4" />
             <h3>How to be Intentional After School (With 3 Effective Steps)</h3>
-            <p className='description'>Most people feel 'stuck' after school finishes. Explore these strategies that help you get closer to your goals.</p>
             <div className='blog-link'>
               <Link to={'/blog/how-to-be-intentional-after-school'}>Read Full Post</Link>
             </div>

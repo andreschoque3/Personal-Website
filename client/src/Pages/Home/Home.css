@@ -141,7 +141,7 @@ strong {
 }
 
 .resume {
-    padding-left: 100px;
+    text-align: center;
 }
 
 .btn.btncv {
@@ -410,6 +410,6 @@ form .btncv {
     }
 
     .resume {
-        margin-left: -60px;
+        margin: 0 -60px;
     }
 }

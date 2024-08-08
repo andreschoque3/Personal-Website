@@ -4,7 +4,7 @@ import '../Blog/Blog.css'
 import { Link } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons'
+import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faXTwitter, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -24,7 +24,7 @@ function BlogPost3() {
   }, []);
 
   // Add the icons
-  library.add(faArrowUpFromBracket, faLinkedin, faXTwitter, faFacebookSquare)
+  library.add(faLinkedin, faXTwitter, faFacebookSquare, faShareNodes)
 
   //copy link to clipboard
   const currentUrl = window.location.href;
@@ -95,7 +95,7 @@ function BlogPost3() {
                 <h1>Haven't subscribed yet?</h1>
                 <p>Join to get a dose of inspiration, insights, and a fresh perspective on life and business.</p>
                 <form onSubmit={onSubmit}>
-                    <input type="text" name="Blog-Subcriber-Email" id="" placeholder='Your Email' />
+                    <input type="email" name="Blog-Subcriber-Email" id="" placeholder='Your Email' required />
                     <button type='submit'>Join</button>
                 </form>
             </div>
@@ -114,7 +114,7 @@ function BlogPost3() {
                 <FacebookShareButton url={currentUrl}>
                 <a href="#facebook-share"><FontAwesomeIcon icon={faFacebookSquare}/></a>
                 </FacebookShareButton>
-                <a href="#copy-link"><FontAwesomeIcon icon={faArrowUpFromBracket} onClick={copyToClipboard}/></a>
+                <a href="#copy-link"><FontAwesomeIcon icon={faShareNodes} onClick={copyToClipboard}/></a>
             </div>
             <hr />
 
