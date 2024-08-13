@@ -12,9 +12,10 @@ import workpic5 from './Images/github-projects.png'
 import workpic6 from './Images/andres-website.png'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faPenRuler, faMicrochip, faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faScrewdriverWrench, faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
 import { Helmet } from 'react-helmet';
+import { ReactTyped } from 'react-typed';
 
 function Home() {
 
@@ -93,7 +94,7 @@ function Home() {
 };
 
   // Icon library
-  library.add(faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faInstagram, faLinkedin, faGithub, faXTwitter)
+  library.add(faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faInstagram, faLinkedin, faGithub, faXTwitter, faScrewdriverWrench, faGraduationCap, faBriefcase)
 
 
   return (
@@ -125,7 +126,14 @@ function Home() {
             <div className='header-text'>
               <p>Hi, I'm</p>
               <h1>Andres Choque</h1>
-              <h2>Let's build solutions together.</h2>
+              <h2>
+                <ReactTyped
+                  strings={["Let's build solutions together."]}
+                  typeSpeed={40}
+                  backSpeed={20}
+                  loop
+                />
+              </h2>
               <a href="#contact" className="header-btn" aria-label='Get-started-button'>Get started</a> 
             </div>
           </div>
@@ -136,6 +144,9 @@ function Home() {
             <div className='row'>
               <div className='abt-col-1'>
                 <img src={AbtPic} alt="Andres-Choque-Professional" />
+              </div>
+              <div className="resume">
+                <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume</button>
               </div>
               <div className="abt-col-2">
                       <h1 className="sub-header">Who am I</h1>
@@ -177,12 +188,11 @@ function Home() {
                           </ul>
                       </div>
               </div>
-              <div className="resume">
-                <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume</button>
-              </div>
             </div>
           </div>
         </div>
+
+        <br />
 
         <div className='services-section' id='services'>
           <div className='container'>

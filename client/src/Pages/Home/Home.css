@@ -24,13 +24,11 @@
 }
 
 .header-text h1 {
-    font-size: 80px;
-    margin-top: 20px;
+    font-size: 75px;
 }
 
 .header-text h2 {
-    margin-top: 10px;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: normal;
 }
 
@@ -45,7 +43,7 @@
     color: white;
     transition: background 0.5s;
     position: absolute;
-    margin-top: 2%;
+    margin-top: 1%;
     font-size: 20px;
 }
 
@@ -142,12 +140,40 @@ strong {
 
 .resume {
     text-align: center;
+    position: absolute;
+    margin-top: 35%;
 }
 
 .btn.btncv {
     display: inline-block;
     background: #ef5327;
 }
+
+.skill-section {
+    display: inline-flex;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 672px;
+    list-style: none;
+}
+
+.custom-class {
+    border-width: 0.5px;
+    border-color: #cbd5e0;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 500ms, transform 500ms, box-shadow 500ms;
+}
+
+.custom-class:hover {
+    background-color: black;
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 #ef5327;
+}
+
+
 
 /**********Services section**********/
 

@@ -82,3 +82,47 @@
             </div>
           </div>
         </div> */}
+
+
+{/* <div>
+          <div className='container'>
+            <h1>About Me</h1>
+            <div className='row'>
+              <div className='abt-col-1'>
+              <img src={AbtPic} alt="Andres-Choque-Professional" />
+              </div>
+              
+              <div className='abt-col-2'>
+                <p>I am a Software Engineer with a passion for technology, business, travel, and leadership. My specialty is on the <strong>Front-End (UX / UI)</strong>.
+                I believe that any product's quality begins at the User's Experience.</p>
+
+                <ul className='skill-section'>
+                  <li className='custom-class'>
+                    <FontAwesomeIcon icon={faScrewdriverWrench} className='hello'/>
+                    <h3>Skills:</h3>
+                    <p><span>Languages</span><br/>English and Spanish</p>
+                    <p><span>Front-End</span><br/>React, Angular, Vue,  HTML, CSS, Bootstrap, JavaScript, TypeScript</p>
+                    <p><span>Back-End</span><br/>Node, Express, Python, Django, PHP, Laravel, Ruby, Rails</p>
+                    <p><span>Database</span><br/>MongoDB, MySQL, SQL Server</p>
+                    <p><span>Tools</span><br/>Git, GitHub, BitBucket, Azure DevOps, Jira, Postman, Selenium</p>
+                    <p><span>Operating Systems</span><br/>Windows, Ubuntu, MacOS, FreeBSD</p>
+                  </li>
+                  <li className='custom-class'>
+                    <FontAwesomeIcon icon={faGraduationCap}/>
+                    <h3>Education:</h3>
+                    <p>Liberty University BS in Computer Science</p>
+                  </li>
+                  <li className='custom-class'>
+                    <FontAwesomeIcon icon={faBriefcase}/>
+                    <h3>Experience:</h3>
+                    <p><span>Oct. 2023 &nbsp;-&nbsp; Present</span><br/>Freelance Web Developer</p>
+                    <p><span>Sep. 2023 &nbsp;-&nbsp; Present</span><br/>Software Engineer I | CyberZek</p>
+                    <p><span>July 2023 &nbsp;-&nbsp; Sep 2023</span><br/>Software Engineer Intern | CyberZek</p>
+                    <p><span>May 2022 &nbsp;-&nbsp; Aug 2022</span><br/>Software Developer Intern | Samaritan's Purse</p>
+                    <p><span>May 2021 &nbsp;-&nbsp; Jul 2021</span><br/>Web Developer Intern | CREOTEC</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> */}
