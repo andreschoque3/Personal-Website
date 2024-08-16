@@ -41,36 +41,6 @@ nav .fa-circle-xmark, .fa-bars {
     display: none;
 }
 
-.tab-links.act-link::after {
-    width: 50%;
-}
-
-.tab-conts ul li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.tab-conts ul li span {
-    color: #ef5327;
-    font-size: 14px;
-}
-
-.tab-conts{
-    display: none;
-}
-
-.tab-conts.act-tab {
-    display: block;
-}
-
-.resume {
-    padding-left: 100px;
-}
-
-.btn.btncv {
-    display: inline-block;
-    background: #ef5327;
-}
 
 /**********Responsive section**********/
 

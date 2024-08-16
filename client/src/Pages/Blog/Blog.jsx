@@ -10,6 +10,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
 
 function Blog() {
 
@@ -76,7 +77,7 @@ function Blog() {
         </div>
         <div className='blog-title'>
           <h1>Beyond Boundaries</h1>
-          <p>Navigating life's adventures through Business, Technology, Lifestyle, and Digital ventures.</p>
+          <p>Navigating life's adventures through Business, Technology, & Lifestyle.</p>
         </div>
       </div>
 
@@ -133,9 +134,7 @@ function Blog() {
         </div>
       </div>
 
-      <div className="copyright">
-        <p>©️ 2024 Andres Choque. All rights reserved.</p>
-      </div>
+      <Footer/>
     </div>
   )
 }

@@ -52,10 +52,16 @@
 
 }
 
+.vertical {
+    width: 0;
+    height: 120px;
+    margin: auto;
+}
+
 /**********About section**********/
 
 .about-section {
-    padding: 80px 0%;
+    margin-top: 10px;
     color: #ababab;
 }
 
@@ -67,6 +73,7 @@ strong {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .abt-col-1 {
@@ -88,8 +95,8 @@ strong {
 
 .sub-header {
     font-size: 60px;
-    font-weight: 600px;
     color: white;
+    text-align: center;
 }
 
 .tabs {
@@ -140,8 +147,6 @@ strong {
 
 .resume {
     text-align: center;
-    position: absolute;
-    margin-top: 35%;
 }
 
 .btn.btncv {
@@ -149,36 +154,14 @@ strong {
     background: #ef5327;
 }
 
-.skill-section {
-    display: inline-flex;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 24px;
-    max-width: 672px;
-    list-style: none;
+.tools, .grad, .briefcs {
+    font-size: 20px;
 }
-
-.custom-class {
-    border-width: 0.5px;
-    border-color: #cbd5e0;
-    border-style: solid;
-    border-radius: 12px;
-    padding: 12px;
-    cursor: pointer;
-    transition: background-color 500ms, transform 500ms, box-shadow 500ms;
-}
-
-.custom-class:hover {
-    background-color: black;
-    transform: translateY(-4px);
-    box-shadow: 6px 6px 0 #ef5327;
-}
-
-
 
 /**********Services section**********/
 
 .services-section {
-    padding: -30px 0;
+    margin: 20px 0;
 }
 
 .services-list {
@@ -186,15 +169,28 @@ strong {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    
 }
 
-.services-list div {
-    background: #262626;
+.service-box {
+    border-width: 0.5px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 12px;
     padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-right: 10px;
-    transition: background 0.5s, transform 0.5s;
+    cursor: pointer;
+    transition: background-color 500ms, transform 500ms, box-shadow 500ms;
+}
+
+.service-box:hover {
+    background-color: black;
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 #ef5327;
+}
+
+.ser-icon {
+    text-align: center;
+    color: #ef5327;
 }
 
 .services-list div svg {
@@ -204,8 +200,8 @@ strong {
 
 .services-list div h2 {
     font-size: 30px;
-    font-weight: 500;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .services-list p {
@@ -213,15 +209,10 @@ strong {
     line-height: 1.8;
 }
 
-.services-list div:hover {
-    background: #ef5327;
-    transform: translateY(-10px);
-}
-
 /**********Portfolio section**********/
 
 .portfolio-section {
-    padding: 50px 0;
+    margin: 30px 0;
 }
 
 .work-list, .work-list-2 {
@@ -376,13 +367,8 @@ form .btncv {
 
 }
 
-.copyright {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    font-weight: 300;
-    margin-top: 40px;
-
+.no-resize {
+    resize: none;
 }
 
 /**********Responsive section**********/

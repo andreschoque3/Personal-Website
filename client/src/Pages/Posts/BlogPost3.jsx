@@ -15,6 +15,7 @@ import {
 } from 'react-share';
 import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
 
 function BlogPost3() {
 
@@ -253,9 +254,7 @@ function BlogPost3() {
             <Link to={'/blog'} className='btn'>Back</Link>
         </div>
 
-        <div className='copyright'>
-            <p>©️ 2024 Andres Choque. All rights reserved.</p>
-        </div>
+        <Footer/>
     </div>
 
     

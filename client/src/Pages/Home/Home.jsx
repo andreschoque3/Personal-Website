@@ -3,16 +3,17 @@ import "./Home.css"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../../Components/Navbar/Navbar'
+import Footer from '../../Components/Footer/Footer';
 import AbtPic from './Images/Andres-Choque-small.jpg'
 import workpic1 from './Images/tactica.png'
 import workpic2 from './Images/drontec.png'
 import workpic3 from './Images/creotec.png'
 import workpic4 from './Images/cfl.png'
 import workpic5 from './Images/github-projects.png'
-import workpic6 from './Images/andres-website.png'
+import workpic6 from './Images/andres-website-2.png'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faScrewdriverWrench, faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faPenRuler, faLink, faEnvelope, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
 import { Helmet } from 'react-helmet';
 import { ReactTyped } from 'react-typed';
@@ -94,7 +95,7 @@ function Home() {
 };
 
   // Icon library
-  library.add(faCode, faPenRuler, faMicrochip, faLink, faEnvelope, faInstagram, faLinkedin, faGithub, faXTwitter, faScrewdriverWrench, faGraduationCap, faBriefcase)
+  library.add(faCode, faPenRuler, faLink, faEnvelope, faInstagram, faLinkedin, faGithub, faXTwitter, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown)
 
 
   return (
@@ -128,7 +129,7 @@ function Home() {
               <h1>Andres Choque</h1>
               <h2>
                 <ReactTyped
-                  strings={["Let's build solutions together."]}
+                  strings={["Software Engineer", "Tech Consultant", "Let's build solutions together."]}
                   typeSpeed={40}
                   backSpeed={20}
                   loop
@@ -138,26 +139,25 @@ function Home() {
             </div>
           </div>
         </div>
-
+        
         <div className='about-section' id='about'>
           <div className='container'>
+            <h1 className="sub-header">About Me</h1>
             <div className='row'>
               <div className='abt-col-1'>
                 <img src={AbtPic} alt="Andres-Choque-Professional" />
-              </div>
-              <div className="resume">
-                <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume</button>
+                <div className="resume">
+                  <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume &nbsp; <FontAwesomeIcon icon={faFileArrowDown}/></button>
+                </div>
               </div>
               <div className="abt-col-2">
-                      <h1 className="sub-header">Who am I</h1>
                       <p>I am a Software Engineer with a passion for technology, business, travel, and leadership. My specialty is on the <strong>Front-End (UX / UI)</strong>.
-                          I believe that any product's quality begins at the User's Experience.
+                          I believe that any product's quality begins at the User Experience.
                       </p>
-
                       <div className="tabs">
-                        <p className={`tab-links ${activeTab === 'skills' ? 'act-link' : ''}`} onClick={() => openTab('skills')}><strong>Skills</strong></p>
-                        <p className={`tab-links ${activeTab === 'experience' ? 'act-link' : ''}`} onClick={() => openTab('experience')}><strong>Experience</strong></p>
-                        <p className={`tab-links ${activeTab === 'education' ? 'act-link' : ''}`} onClick={() => openTab('education')}><strong>Education</strong></p>
+                        <p className={`tab-links ${activeTab === 'skills' ? 'act-link' : ''}`} onClick={() => openTab('skills')}><strong><FontAwesomeIcon className='tools' icon={faScrewdriverWrench}/> &nbsp; Skills</strong></p>
+                        <p className={`tab-links ${activeTab === 'experience' ? 'act-link' : ''}`} onClick={() => openTab('experience')}><strong> <FontAwesomeIcon className='briefcs' icon={faBriefcase}/> &nbsp; Experience</strong></p>
+                        <p className={`tab-links ${activeTab === 'education' ? 'act-link' : ''}`} onClick={() => openTab('education')}><strong><FontAwesomeIcon className='grad' icon={faGraduationCap}/> &nbsp; Education</strong></p>
                       </div>
 
                       <div className={`tab-conts ${activeTab === 'skills' ? 'act-tab' : ''}`} id="skills">
@@ -192,32 +192,40 @@ function Home() {
           </div>
         </div>
 
-        <br />
-
         <div className='services-section' id='services'>
           <div className='container'>
             <h1 className="sub-header">Services</h1>
 
             <div className="services-list">
-                <div>
-                    <FontAwesomeIcon icon={faCode}/>
-                    <h2><strong>Web & App Development</strong></h2>
-                    <p>Web Applications are key for a quality product. I enjoy writing in multiple languages helping the client to reach their goals.</p>
+                <div className='service-box'>
+                    <div className='ser-icon'>
+                      <FontAwesomeIcon icon={faCode}/>
+                    </div>
+                    <h2><strong>Web Development</strong></h2>
+                    <p>Web applications are essential to a quality product. I specialize in coding across multiple languages to help clients achieve their goals.</p>
                 </div>
 
-                <div>
-                    <FontAwesomeIcon icon={faPenRuler}/>
+                <div className='service-box'>
+                    <div className='ser-icon'>
+                      <FontAwesomeIcon icon={faPenRuler}/>
+                    </div>
                     <h2><strong>Web Design</strong></h2>
-                    <p>User Experience (UX) is the most important aspect of a quality product. I love designing products using multiple design tools.</p>
+                    <p>User Experience (UX) is at the heart of quality design. I craft intuitive and engaging products using a range of design tools.</p>
                 </div>
 
-                <div>
-                    <FontAwesomeIcon icon={faMicrochip}/>
-                    <h2><strong>AI Development</strong></h2>
-                    <p>With the growth of Artificial Intelligence it's a priority to build software and integrate AI solutions to keep up with innovation.</p>
+                <div className='service-box'>
+                    <div className='ser-icon'>
+                      <FontAwesomeIcon icon={faUsers}/>
+                    </div>
+                    <h2><strong>Mentorship</strong></h2>
+                    <p>I guide technology professionals in achieving their career goals by offering tailored mentorship and clear career roadmaps.</p>
                 </div>
             </div>
           </div>
+        </div>
+
+        <div className='line-div'>
+          <hr className='vertical' />
         </div>
 
         <div className='portfolio-section' id='portfolio'>
@@ -310,18 +318,15 @@ function Home() {
                     <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
                         <input type="text" name="Name" placeholder="Name" required/>
                         <input type="email" name="Email" placeholder="Email" required/>
-                        <textarea name="Message" id=""  rows="6" placeholder="Message"></textarea>
+                        <textarea name="Message" id=""  rows="6" placeholder="Message" className='no-resize'></textarea>
                         <button type="submit" className="btn btncv">Submit</button>
                     </form>
-                    <span id="submit-msg"></span>
                 </div>
             </div>
           </div>
-
-          <div className="copyright">
-            <p>©️ 2024 Andres Choque. All rights reserved.</p>
-          </div>
         </div>
+
+        <Footer/>
 
     </div>
   )
