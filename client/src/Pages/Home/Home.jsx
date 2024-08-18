@@ -11,9 +11,8 @@ import workpic3 from './Images/creotec.png'
 import workpic4 from './Images/cfl.png'
 import workpic5 from './Images/github-projects.png'
 import workpic6 from './Images/andres-website-2.png'
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faPenRuler, faLink, faEnvelope, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faPenRuler, faEnvelope, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
 import { Helmet } from 'react-helmet';
 import { ReactTyped } from 'react-typed';
@@ -75,6 +74,9 @@ function Home() {
     e.preventDefault();
     const formData = new FormData(e.target);
 
+    // Immediately show a loading message
+    toast.info('Submitting your message...');
+
     try {
         const response = await fetch(scriptURL, {
             method: 'POST',
@@ -90,13 +92,9 @@ function Home() {
         }
     } catch (error) {
         console.error('Error!', error.message);
-        toast.error('Error', error.message);
+        toast.error('Error occurred while submitting the form.', error.message);
     }
 };
-
-  // Icon library
-  library.add(faCode, faPenRuler, faLink, faEnvelope, faInstagram, faLinkedin, faGithub, faXTwitter, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown)
-
 
   return (
     <div>
@@ -192,6 +190,10 @@ function Home() {
           </div>
         </div>
 
+        <div className='line-div'>
+          <hr className='vertical' />
+        </div>
+
         <div className='services-section' id='services'>
           <div className='container'>
             <h1 className="sub-header">Services</h1>
@@ -237,17 +239,15 @@ function Home() {
                     <img src={workpic1} alt='Tactica-ministries' />
                     <div className="layer">
                        <h3><strong>TACTICA Ministries</strong></h3>
-                       <p>TACTICA Ministries trains and helps the public safety community internationally.</p>
-                       <a href="https://tacticaministries.org/" target="_blank" rel="noreferrer noopener" aria-label='Tactica-ministries-website-link'> <FontAwesomeIcon icon={faLink}/></a>
+                       <a href="https://tacticaministries.org/" target="_blank" rel="noreferrer noopener" aria-label='Tactica-ministries-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a>
                     </div>
                 </div>
 
                 <div className="work">
                     <img src={workpic2} alt='Drontec' />
                     <div className="layer">
-                       <h3><strong>Drontec</strong></h3>
-                       <p>Drontec allows customers to purchase highly specialized drones for any task.</p>
-                       <a href="https://drontec.org/" target="_blank" rel="noreferrer noopener" aria-label='Drontec-website-link'> <FontAwesomeIcon icon={faLink}/></a> 
+                       <h3><strong>Drontec</strong></h3>    
+                       <a href="https://drontec.org/" target="_blank" rel="noreferrer noopener" aria-label='Drontec-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
                     </div>
                 </div>
 
@@ -255,20 +255,18 @@ function Home() {
                     <img src={workpic3} alt='Creotec' />
                     <div className="layer">
                         <h3><strong>CREOTEC</strong></h3>
-                        <p>CREOTEC allows customers to purchase prosthetics for the people in need.</p>
-                        <a href="https://creo-tec.com/" target="_blank" rel="noreferrer noopener" aria-label='Creotec-website-link'> <FontAwesomeIcon icon={faLink}/></a> 
+                        <a href="https://creo-tec.com/" target="_blank" rel="noreferrer noopener" aria-label='Creotec-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
                      </div>
                 </div>
             </div>
 
             {showMore && (
-            <div className="work-list-2">          
+            <div className="work-list">          
                 <div className="work">
                     <img src={workpic4} alt='Center-for-financial-literacy' />
                     <div className="layer">
-                        <h3><strong>Center for Financial Literacy App</strong></h3>
-                        <p>CFL App allows you to visualize and budget your finances.</p>
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7061417643429257216/" target="_blank" rel="noreferrer noopener" aria-label='Center-for-financial-literacy-linkedin-link'> <FontAwesomeIcon icon={faLink}/></a> 
+                        <h3><strong>Finance App</strong></h3>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7061417643429257216/" target="_blank" rel="noreferrer noopener" aria-label='Center-for-financial-literacy-linkedin-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
                      </div>
                 </div>
 
@@ -276,17 +274,15 @@ function Home() {
                     <img src={workpic5} alt='Andres-Choque-Github' />
                     <div className="layer">
                         <h3><strong>School Projects</strong></h3>
-                        <p>Holds a collection of software built for school.</p>
-                        <a href="https://github.com/andreschoque3/LU-School-Projects" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-github-webpage'> <FontAwesomeIcon icon={faLink}/></a> 
+                        <a href="https://github.com/andreschoque3/LU-School-Projects" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-github-webpage'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
                      </div>
                 </div>
 
                 <div className="work">
                     <img src={workpic6} alt='Andres-Choque-website' />
                     <div className="layer">
-                        <h3><strong>Business Website</strong></h3>
-                        <p>The website that showcases all the software & solutions provided.</p>
-                        <a href="https://andreschoque.com/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-website-link'> <FontAwesomeIcon icon={faLink}/></a> 
+                        <h3><strong>Personal Brand</strong></h3>
+                        <a href="https://andreschoque.com/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
                      </div>
                 </div>
             </div>
@@ -304,7 +300,7 @@ function Home() {
           <div className='container'>
             <div className='row'>
                 <div className="contact-l">
-                    <h1 className="sub-header">Let's Connect</h1>
+                    <h1 className="contact-header">Let's Connect</h1>
                     <p><FontAwesomeIcon icon={faEnvelope}/> andreschoque71@gmail.com</p>
                     <div className="social">
                         <a href="https://www.instagram.com/andres.choque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-instagram-account'><FontAwesomeIcon icon={faInstagram}/></a>
