@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Home from './Pages/Home/Home';
 import Blog from './Pages/Blog/Blog';
+import Newsletter from './Pages/Newsletter/Newsletter';
 import BlogPost1 from './Pages/Posts/BlogPost1';
 import BlogPost2 from './Pages/Posts/BlogPost2';
 import BlogPost3 from './Pages/Posts/BlogPost3';
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/blog' element={<Blog/>}/>
+          <Route path='/newsletter' element={<Newsletter/>}/>
           <Route path='/blog/how-to-be-intentional-after-school' element={<BlogPost1/>}/>
           <Route path='/blog/the-value-of-travel' element={<BlogPost2/>}/>
           <Route path='/blog/you-are-one-mentor-away-from-changing-your-life' element={<BlogPost3/>}/>

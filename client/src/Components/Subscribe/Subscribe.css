@@ -1,0 +1,53 @@
+.sub-container h1 {
+    text-align: center;
+    font-size: 55px;
+    margin-top: 50px;
+}
+
+.sub-container p {
+    text-align: center;
+    margin: 20px 20%;
+}
+
+.sub-container form {
+    text-align: center;
+}
+
+.sub-container form input {
+    width: 30%;
+}
+
+.sub-container button {
+    font-size: 18px;
+    padding: 14px 60px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ef5327;
+    transition: background 0.5s;
+}
+
+.sub-container button:hover {
+    background: #ef5327;
+}
+
+/**********Responsive section**********/
+
+@media screen and (max-width: 800px) {
+    .sub-container h1 {
+        font-size: 40px;
+    }
+
+    .sub-container p {
+        margin: 20px 0;
+    }
+
+    .sub-container form input {
+        width: 50%;
+    }
+
+    .sub-container form button {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+}
