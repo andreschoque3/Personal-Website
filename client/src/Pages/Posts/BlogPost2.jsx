@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
-import Blog_Subscriber from '../../Components/Blog_Subscriber/Blog_Subscriber';
 import Sharing from '../../Components/Sharing/Sharing';
-
+import BlogSubscriber from '../../Components/Blog_Subscriber/BlogSubscriber';
 
 function BlogPost2() {
 
@@ -45,7 +44,7 @@ function BlogPost2() {
       </div>
 
       <div className='blog-post-content'>
-        <Blog_Subscriber/>
+        <BlogSubscriber/>
 
         <div className='blog-content-container'>
           <h1><strong>The Value of Travel and Where You Should Consider Going</strong></h1>

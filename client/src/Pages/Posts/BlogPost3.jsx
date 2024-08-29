@@ -6,7 +6,8 @@ import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Sharing from '../../Components/Sharing/Sharing';
-import Blog_Subscriber from '../../Components/Blog_Subscriber/Blog_Subscriber';
+import BlogSubscriber from '../../Components/Blog_Subscriber/BlogSubscriber';
+
 
 function BlogPost3() {
 
@@ -15,7 +16,6 @@ function BlogPost3() {
     document.title = 'You Are One Mentor Away From Changing Your Life (Growth is Inevitable)';
   }, []);
 
-  
   return (
     <div>
         <Helmet>
@@ -43,7 +43,7 @@ function BlogPost3() {
         </div>
 
         <div className='blog-post-content'>
-            <Blog_Subscriber/>
+            <BlogSubscriber/>
 
             <div className='blog-content-container'>
                 <h1><strong>You Are One Mentor Away From Changing Your Life (Growth is Inevitable)</strong></h1>

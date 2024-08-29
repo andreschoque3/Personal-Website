@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
-import Blog_Subscriber from '../../Components/Blog_Subscriber/Blog_Subscriber';
 import Sharing from '../../Components/Sharing/Sharing';
+import BlogSubscriber from '../../Components/Blog_Subscriber/BlogSubscriber';
 
 
 function BlogPost1() {
@@ -45,7 +45,7 @@ function BlogPost1() {
       </div>
 
       <div className='blog-post-content'>
-        <Blog_Subscriber/>
+        <BlogSubscriber/>
 
         <div className='blog-content-container'>
           <h1><strong>How to be Intentional After School (With 3 Effective Steps)</strong></h1>

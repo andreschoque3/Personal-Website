@@ -1,8 +1,8 @@
 import React from 'react'
-import './Blog_Subscriber.css'
+import './BlogSubscriber.css'
 import { toast } from 'react-toastify';
 
-function Blog_Subscriber() {
+function BlogSubscriber() {
 
     // Email functionality
   const onSubmit = async (event) => {
@@ -49,4 +49,4 @@ function Blog_Subscriber() {
   )
 }
 
-export default Blog_Subscriber
+export default BlogSubscriber
