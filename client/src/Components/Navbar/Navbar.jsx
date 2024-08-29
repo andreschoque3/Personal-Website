@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import logo from '../Assets/andres-choque-logo.png'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -15,11 +14,6 @@ function Navbar() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
-  // Add the icons
-
-  library.add(faCircleXmark, faBars)
-
 
   return (
     <div className='navbar'>

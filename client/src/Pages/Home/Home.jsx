@@ -171,7 +171,7 @@ function Home() {
 
                       <div className={`tab-conts ${activeTab === 'experience' ? 'act-tab' : ''}`} id="experience">
                           <ul>
-                              <li><span>Oct. 2023 &nbsp;-&nbsp; Present</span><br/>Freelance Web Developer</li>
+                              <li><span>Oct. 2023 &nbsp;-&nbsp; Present</span><br/>Web Developer & Consultant</li>
                               <li><span>Sep. 2023 &nbsp;-&nbsp; Present</span><br/>Software Engineer I | CyberZek</li>
                               <li><span>July 2023 &nbsp;-&nbsp; Sep 2023</span><br/>Software Engineer Intern | CyberZek</li>
                               <li><span>May 2022 &nbsp;-&nbsp; Aug 2022</span><br/>Software Developer Intern | Samaritan's Purse</li>
@@ -188,10 +188,6 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className='line-div'>
-          <hr className='vertical' />
         </div>
 
         <div className='services-section' id='services'>
@@ -224,10 +220,6 @@ function Home() {
                 </div>
             </div>
           </div>
-        </div>
-
-        <div className='line-div'>
-          <hr className='vertical' />
         </div>
 
         <div className='portfolio-section' id='portfolio'>
@@ -296,11 +288,39 @@ function Home() {
           </div>
         </div>
 
+        <div className='reviews-section' id='reviews'>
+            <div className='container'>
+              <h1 className='sub-header'>Testimonials</h1>
+
+              <div className='testimonials'>
+                <div className='test-box'>
+                  <h1>Ryan & Gretchen</h1>
+                  <p>Andres worked hard to bring our (complex!) vision to life, and we couldn’t be more pleased with the result. 
+                    Thank you, for your contributions, patience, and for setting a new standard of excellence with this launch!</p>
+                </div>
+
+                <div className='test-box'>
+                  <h1>Antonio</h1>
+                  <p>Andres was a great young professional to work alongside with. His eye for design allowed our vision to come about.
+                    He communicates effectively, works in a timely manner, and demonstrated a high level of skill for this project.</p>
+                </div>
+
+                <div className='test-box'>
+                  <h1>Robert</h1>
+                  <p>Andres brought a strong level of technical aptitude to this project. I am grateful to have him be a part of the 
+                    project. His level of dedication and humility has made him a strong and effective member of our team.</p>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
         <div className='contact-section' id='contact'>
           <div className='container'>
-            <div className='row'>
-                <div className="contact-l">
-                    <h1 className="contact-header">Let's Connect</h1>
+            <h1 className="sub-header">Let's Get in Touch</h1>
+
+            <div className='column'>
+                <div className="contact-t">
                     <p><FontAwesomeIcon icon={faEnvelope}/> andreschoque71@gmail.com</p>
                     <div className="social">
                         <a href="https://www.instagram.com/andres.choque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-instagram-account'><FontAwesomeIcon icon={faInstagram}/></a>
@@ -310,12 +330,14 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="contact-r">
+                <div className="contact-b">
                     <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
                         <input type="text" name="Name" placeholder="Name" required/>
                         <input type="email" name="Email" placeholder="Email" required/>
                         <textarea name="Message" id=""  rows="6" placeholder="Message" className='no-resize'></textarea>
-                        <button type="submit" className="btn btncv">Submit</button>
+                        <div className='align-btn'>
+                          <button type="submit" className="btn btncv">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>

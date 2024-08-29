@@ -2,20 +2,11 @@ import React, { useEffect } from 'react';
 import '../../Components/Navbar/Navbar.css'
 import '../Blog/Blog.css'
 import { Link } from 'react-router-dom'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faXTwitter, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import {
-  LinkedinShareButton,
-  TwitterShareButton,
-  FacebookShareButton,
-} from 'react-share';
 import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
+import Sharing from '../../Components/Sharing/Sharing';
+import Blog_Subscriber from '../../Components/Blog_Subscriber/Blog_Subscriber';
 
 function BlogPost3() {
 
@@ -24,47 +15,7 @@ function BlogPost3() {
     document.title = 'You Are One Mentor Away From Changing Your Life (Growth is Inevitable)';
   }, []);
 
-  // Add the icons
-  library.add(faLinkedin, faXTwitter, faFacebookSquare, faShareNodes)
-
-  //copy link to clipboard
-  const currentUrl = window.location.href;
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(currentUrl);
-    toast.success('Link copied to clipboard')
-  };
-
-  // Email functionality
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "efae9b3c-bf15-4bd7-91ed-ff9435feb4d9");
-
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
-
-    if (res.success) {
-      console.log("Success", res);
-      toast.success("Email successfully sent.")
-      event.target.reset();
-    }
-    else {
-      console.log("Error", res)
-      toast.error("Error while sending email.")
-    }
-  };
-
+  
   return (
     <div>
         <Helmet>
@@ -92,31 +43,14 @@ function BlogPost3() {
         </div>
 
         <div className='blog-post-content'>
-            <div className='subscriber-container'>
-                <h1>Haven't subscribed yet?</h1>
-                <p>Join to get a dose of inspiration, insights, and a fresh perspective on life and business.</p>
-                <form onSubmit={onSubmit}>
-                    <input type="email" name="Blog-Subcriber-Email" id="" placeholder='Your Email' required />
-                    <button type='submit'>Join</button>
-                </form>
-            </div>
+            <Blog_Subscriber/>
 
             <div className='blog-content-container'>
                 <h1><strong>You Are One Mentor Away From Changing Your Life (Growth is Inevitable)</strong></h1>
                 <h2>July 28, 2024 | Andres Choque</h2> 
+    
+            <Sharing/>
 
-                <div className='socials'>
-                <LinkedinShareButton url={currentUrl}>
-                <a href="#linkedin-share"><FontAwesomeIcon icon={faLinkedin} /></a>
-                </LinkedinShareButton>
-                <TwitterShareButton url={currentUrl}>
-                <a href='#twitter-share'><FontAwesomeIcon icon={faXTwitter}/></a>
-                </TwitterShareButton>
-                <FacebookShareButton url={currentUrl}>
-                <a href="#facebook-share"><FontAwesomeIcon icon={faFacebookSquare}/></a>
-                </FacebookShareButton>
-                <a href="#copy-link"><FontAwesomeIcon icon={faShareNodes} onClick={copyToClipboard}/></a>
-            </div>
             <hr />
 
             <div className='blog-body'>

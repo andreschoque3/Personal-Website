@@ -1,0 +1,19 @@
+.socials {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.socials a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.socials a:hover {
+    color: #ef5327;
+    transform: translateY(-5px);
+}
