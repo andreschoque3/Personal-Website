@@ -5,9 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer';
 import AbtPic from './Images/Andres-Choque-small.jpg'
+import workpic7 from './Images/java-loco.png'
 import workpic1 from './Images/tactica.png'
 import workpic2 from './Images/drontec.png'
-import workpic3 from './Images/creotec.png'
 import workpic4 from './Images/cfl.png'
 import workpic5 from './Images/github-projects.png'
 import workpic6 from './Images/andres-website-2.png'
@@ -75,7 +75,11 @@ function Home() {
     const formData = new FormData(e.target);
 
     // Immediately show a loading message
-    toast.info('Submitting your message...');
+    toast.info('Submitting your message...',
+      {style: {
+          backgroundColor: 'black',
+          color: 'white'
+      }});
 
     try {
         const response = await fetch(scriptURL, {
@@ -84,7 +88,11 @@ function Home() {
         });
 
         if (response.ok) {
-            toast.success('Form submitted successfully!')
+            toast.success('Form submitted successfully!', 
+            {style: {
+                backgroundColor: 'black',
+                color: 'white'
+            }})
             e.target.reset();
         } else {
             toast.error('Form submission failed');
@@ -228,6 +236,14 @@ function Home() {
 
             <div className='work-list'>
                 <div className="work">
+                    <img src={workpic7} alt='Java-loco' />
+                    <div className="layer">
+                       <h3><strong>Java Loco</strong></h3>
+                       <a href="https://andreschoque3.github.io/Coffee_website/" target="_blank" rel="noreferrer noopener" aria-label='Tactica-ministries-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a>
+                    </div>
+                </div>
+
+                <div className="work">
                     <img src={workpic1} alt='Tactica-ministries' />
                     <div className="layer">
                        <h3><strong>TACTICA Ministries</strong></h3>
@@ -241,14 +257,6 @@ function Home() {
                        <h3><strong>Drontec</strong></h3>    
                        <a href="https://drontec.org/" target="_blank" rel="noreferrer noopener" aria-label='Drontec-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
                     </div>
-                </div>
-
-                <div className="work">
-                    <img src={workpic3} alt='Creotec' />
-                    <div className="layer">
-                        <h3><strong>CREOTEC</strong></h3>
-                        <a href="https://creo-tec.com/" target="_blank" rel="noreferrer noopener" aria-label='Creotec-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
-                     </div>
                 </div>
             </div>
 

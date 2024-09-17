@@ -1,0 +1,33 @@
+.form-container form {
+    text-align: center;
+}
+
+.form-container form input {
+    width: 30%;
+}
+
+.form-container button {
+    font-size: 18px;
+    padding: 14px 60px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ef5327;
+    transition: background 0.5s;
+}
+
+.form-container button:hover {
+    background: #ef5327;
+}
+
+@media screen and (max-width: 800px) {
+
+    .form-container form input {
+        width: 50%;
+    }
+
+    .form-container form button {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+}

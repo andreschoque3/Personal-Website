@@ -9,24 +9,3 @@
     margin-top: 20px;
 }
 
-.subscriber-container form {
-    text-align: center;
-}
-
-.subscriber-container form input {
-    width: 30%;
-}
-
-.subscriber-container button {
-    font-size: 18px;
-    padding: 14px 60px;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    border: 1px solid #ef5327;
-    transition: background 0.5s;
-}
-
-.subscriber-container button:hover {
-    background: #ef5327;
-}
