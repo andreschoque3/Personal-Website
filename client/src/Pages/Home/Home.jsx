@@ -19,6 +19,8 @@ import { ReactTyped } from 'react-typed';
 
 function Home() {
 
+  //test comment
+
   // browser tab title
   useEffect(() => {
     document.title = 'Home - Andres Choque';
