@@ -12,7 +12,7 @@ import workpic4 from './Images/cfl.png'
 import workpic5 from './Images/github-projects.png'
 import workpic6 from './Images/andres-website-2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faPenRuler, faEnvelope, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faPenRuler, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
 import { Helmet } from 'react-helmet';
 import { ReactTyped } from 'react-typed';
@@ -34,7 +34,7 @@ function Home() {
     const handleDownloadResume = async () => {
       try {
           // Fetch the resume file from the public folder
-          const response = await fetch('/Andres_Choque_2024.pdf');
+          const response = await fetch('/Andres_Choque_Resume_2024.pdf');
           const blob = await response.blob();
 
           // Create a URL for the blob object
@@ -180,8 +180,7 @@ function Home() {
                       <div className={`tab-conts ${activeTab === 'experience' ? 'act-tab' : ''}`} id="experience">
                           <ul>
                               <li><span>Oct. 2023 &nbsp;-&nbsp; Present</span><br/>Web Developer & Consultant</li>
-                              <li><span>Sep. 2023 &nbsp;-&nbsp; Present</span><br/>Software Engineer I | CyberZek</li>
-                              <li><span>July 2023 &nbsp;-&nbsp; Sep 2023</span><br/>Software Engineer Intern | CyberZek</li>
+                              <li><span>Jul. 2023 &nbsp;-&nbsp; Present</span><br/>Software Engineer II | CyberZek</li>
                               <li><span>May 2022 &nbsp;-&nbsp; Aug 2022</span><br/>Software Developer Intern | Samaritan's Purse</li>
                               <li><span>May 2021 &nbsp;-&nbsp; Jul 2021</span><br/>Web Developer Intern | CREOTEC</li>
                           </ul>
@@ -325,11 +324,11 @@ function Home() {
 
         <div className='contact-section' id='contact'>
           <div className='container'>
-            <h1 className="sub-header">Let's Get in Touch</h1>
+            <h1 className="sub-header">Get in Touch</h1>
 
             <div className='column'>
                 <div className="contact-t">
-                    <p><FontAwesomeIcon icon={faEnvelope}/> andreschoque71@gmail.com</p>
+                    {/* <p><FontAwesomeIcon icon={faEnvelope}/>andreschoque71@gmail.com</p> */}
                     <div className="social">
                         <a href="https://www.instagram.com/andres.choque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-instagram-account'><FontAwesomeIcon icon={faInstagram}/></a>
                         <a href="https://twitter.com/andres_choque23" target='_blank' rel='noreferrer noopener' aria-label='Andres-choque-twitter-account'><FontAwesomeIcon icon={faXTwitter}/></a>
