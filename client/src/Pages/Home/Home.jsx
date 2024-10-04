@@ -16,6 +16,10 @@ import { faCode, faPenRuler, faScrewdriverWrench, faGraduationCap, faBriefcase, 
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
 import { Helmet } from 'react-helmet';
 import { ReactTyped } from 'react-typed';
+import ServiceBox from '../../Components/Divs/ServiceBox';
+import TestBox from '../../Components/Divs/TestBox';
+import WorkBox from '../../Components/Divs/WorkBox';
+
 
 function Home() {
 
@@ -66,6 +70,87 @@ function Home() {
     const handleHide = () => {
         setShowMore(false);
     };
+
+  // portfolio data
+  const works = [
+    {
+      imgSrc: workpic7,
+      alt: 'Java-loco',
+      title: 'Java Loco',
+      link: 'https://andreschoque3.github.io/Coffee_website/',
+      ariaLabel: 'Java-loco-website-link',
+    },
+    {
+      imgSrc: workpic1,
+      alt: 'Tactica-ministries',
+      title: 'TACTICA Ministries',
+      link: 'https://tacticaministries.org/',
+      ariaLabel: 'Tactica-ministries-website-link',
+    },
+    {
+      imgSrc: workpic2,
+      alt: 'Drontec',
+      title: 'Drontec',
+      link: 'https://drontec.org/',
+      ariaLabel: 'Drontec-website-link',
+    },
+    {
+      imgSrc: workpic4,
+      alt: 'Center-for-financial-literacy',
+      title: 'Finance App',
+      link: 'https://www.linkedin.com/feed/update/urn:li:activity:7061417643429257216/',
+      ariaLabel: 'Center-for-financial-literacy-linkedin-link',
+    },
+    {
+      imgSrc: workpic5,
+      alt: 'Andres-Choque-Github',
+      title: 'School Projects',
+      link: 'https://github.com/andreschoque3/LU-School-Projects',
+      ariaLabel: 'Andres-choque-github-webpage',
+    },
+    {
+      imgSrc: workpic6,
+      alt: 'Andres-Choque-website',
+      title: 'Personal Brand',
+      link: 'https://andreschoque.com/',
+      ariaLabel: 'Andres-choque-website-link',
+    },
+  ];
+
+  // Services data
+  const servicesData = [
+    {
+      icon: faCode,
+      title: "Web Development",
+      description: "Web applications are essential to a quality product. I specialize in coding across multiple languages to help clients achieve their goals."
+    },
+    {
+      icon: faPenRuler,
+      title: "Web Design",
+      description: "User Experience (UX) is at the heart of quality design. I craft intuitive and engaging products using a range of design tools."
+    },
+    {
+      icon: faUsers,
+      title: "Mentorship",
+      description: "I guide technology professionals in achieving their career goals by offering tailored mentorship and clear career roadmaps."
+    }
+  ];
+
+  // Testimonial data 
+    const testimonialsData = [
+      {
+        author: "Ryan & Gretchen",
+        description: "Andres worked hard to bring our (complex!) vision to life, and we couldn’t be more pleased with the result. Thank you, for your contributions, patience, and for setting a new standard of excellence with this launch!"
+      },
+      {
+        author: "Antonio",
+        description: "Andres was a great young professional to work alongside with. His eye for design allowed our vision to come about. He communicates effectively, works in a timely manner, and demonstrated a high level of skill for this project."
+      },
+      {
+        author: "Robert",
+        description: "Andres brought a strong level of technical aptitude to this project. I am grateful to have him be a part of the project. His level of dedication and humility has made him a strong and effective member of our team."
+      }
+    ];
 
   // Contact form functionality
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyiMFJxNG-Oe1735pct_MGwOk1EhP7t5LKAu9u4KHLdk_NqJIPJiSrXQrbs6Lzco8j7/exec';
@@ -202,29 +287,18 @@ function Home() {
             <h1 className="sub-header">Services</h1>
 
             <div className="services-list">
-                <div className='service-box'>
-                    <div className='ser-icon'>
-                      <FontAwesomeIcon icon={faCode}/>
-                    </div>
-                    <h2><strong>Web Development</strong></h2>
-                    <p>Web applications are essential to a quality product. I specialize in coding across multiple languages to help clients achieve their goals.</p>
-                </div>
-
-                <div className='service-box'>
-                    <div className='ser-icon'>
-                      <FontAwesomeIcon icon={faPenRuler}/>
-                    </div>
-                    <h2><strong>Web Design</strong></h2>
-                    <p>User Experience (UX) is at the heart of quality design. I craft intuitive and engaging products using a range of design tools.</p>
-                </div>
-
-                <div className='service-box'>
-                    <div className='ser-icon'>
-                      <FontAwesomeIcon icon={faUsers}/>
-                    </div>
-                    <h2><strong>Mentorship</strong></h2>
-                    <p>I guide technology professionals in achieving their career goals by offering tailored mentorship and clear career roadmaps.</p>
-                </div>
+              {servicesData.map((service, index) => (
+                <ServiceBox 
+                  key={index}
+                  icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                  containerClass="service-box"
+                  iconClass="ser-icon"
+                  titleClass="service-title"
+                  descriptionClass="service-description"
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -300,23 +374,13 @@ function Home() {
               <h1 className='sub-header'>Testimonials</h1>
 
               <div className='testimonials'>
-                <div className='test-box'>
-                  <h1>Ryan & Gretchen</h1>
-                  <p>Andres worked hard to bring our (complex!) vision to life, and we couldn’t be more pleased with the result. 
-                    Thank you, for your contributions, patience, and for setting a new standard of excellence with this launch!</p>
-                </div>
-
-                <div className='test-box'>
-                  <h1>Antonio</h1>
-                  <p>Andres was a great young professional to work alongside with. His eye for design allowed our vision to come about.
-                    He communicates effectively, works in a timely manner, and demonstrated a high level of skill for this project.</p>
-                </div>
-
-                <div className='test-box'>
-                  <h1>Robert</h1>
-                  <p>Andres brought a strong level of technical aptitude to this project. I am grateful to have him be a part of the 
-                    project. His level of dedication and humility has made him a strong and effective member of our team.</p>
-                </div>
+                {testimonialsData.map((testimonial, index) => (
+                    <TestBox 
+                      key={index}
+                      author={testimonial.author} 
+                      description={testimonial.description} 
+                    />
+                ))}
               </div>
 
             </div>
@@ -324,7 +388,7 @@ function Home() {
 
         <div className='contact-section' id='contact'>
           <div className='container'>
-            <h1 className="sub-header">Get in Touch</h1>
+            <h1 className="sub-header">Let's Get in Touch</h1>
 
             <div className='column'>
                 <div className="contact-t">
