@@ -18,7 +18,6 @@ import { Helmet } from 'react-helmet';
 import { ReactTyped } from 'react-typed';
 import ServiceBox from '../../Components/Divs/ServiceBox';
 import TestBox from '../../Components/Divs/TestBox';
-import WorkBox from '../../Components/Divs/WorkBox';
 
 
 function Home() {
@@ -70,52 +69,6 @@ function Home() {
     const handleHide = () => {
         setShowMore(false);
     };
-
-  // portfolio data
-  const works = [
-    {
-      imgSrc: workpic7,
-      alt: 'Java-loco',
-      title: 'Java Loco',
-      link: 'https://andreschoque3.github.io/Coffee_website/',
-      ariaLabel: 'Java-loco-website-link',
-    },
-    {
-      imgSrc: workpic1,
-      alt: 'Tactica-ministries',
-      title: 'TACTICA Ministries',
-      link: 'https://tacticaministries.org/',
-      ariaLabel: 'Tactica-ministries-website-link',
-    },
-    {
-      imgSrc: workpic2,
-      alt: 'Drontec',
-      title: 'Drontec',
-      link: 'https://drontec.org/',
-      ariaLabel: 'Drontec-website-link',
-    },
-    {
-      imgSrc: workpic4,
-      alt: 'Center-for-financial-literacy',
-      title: 'Finance App',
-      link: 'https://www.linkedin.com/feed/update/urn:li:activity:7061417643429257216/',
-      ariaLabel: 'Center-for-financial-literacy-linkedin-link',
-    },
-    {
-      imgSrc: workpic5,
-      alt: 'Andres-Choque-Github',
-      title: 'School Projects',
-      link: 'https://github.com/andreschoque3/LU-School-Projects',
-      ariaLabel: 'Andres-choque-github-webpage',
-    },
-    {
-      imgSrc: workpic6,
-      alt: 'Andres-Choque-website',
-      title: 'Personal Brand',
-      link: 'https://andreschoque.com/',
-      ariaLabel: 'Andres-choque-website-link',
-    },
-  ];
 
   // Services data
   const servicesData = [
@@ -226,7 +179,7 @@ function Home() {
                   loop
                 />
               </h2>
-              <a href="#contact" className="header-btn" aria-label='Get-started-button'>Get started</a> 
+              <a href="#contact" id='Get-started' className="header-btn" aria-label='Get-started-button'>Get started</a> 
             </div>
           </div>
         </div>
@@ -238,7 +191,7 @@ function Home() {
               <div className='abt-col-1'>
                 <img src={AbtPic} alt="Andres-Choque-Professional" />
                 <div className="resume">
-                  <button onClick={handleDownloadResume} className="btn" aria-label='Download-resume-button'>Download Resume &nbsp; <FontAwesomeIcon icon={faFileArrowDown}/></button>
+                  <button onClick={handleDownloadResume} id='Download-resume' className="btn" aria-label='Download-resume-button'>Download Resume &nbsp; <FontAwesomeIcon icon={faFileArrowDown}/></button>
                 </div>
               </div>
               <div className="abt-col-2">
@@ -394,20 +347,20 @@ function Home() {
                 <div className="contact-t">
                     {/* <p><FontAwesomeIcon icon={faEnvelope}/>andreschoque71@gmail.com</p> */}
                     <div className="social">
-                        <a href="https://www.instagram.com/andres.choque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-instagram-account'><FontAwesomeIcon icon={faInstagram}/></a>
-                        <a href="https://twitter.com/andres_choque23" target='_blank' rel='noreferrer noopener' aria-label='Andres-choque-twitter-account'><FontAwesomeIcon icon={faXTwitter}/></a>
-                        <a href="https://www.linkedin.com/in/andreschoque23/" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-linkedin-account'><FontAwesomeIcon icon={faLinkedin}/></a>
-                        <a href="https://github.com/andreschoque3" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-github-account'><FontAwesomeIcon icon={faGithub}/></a>
+                        <a href="https://www.instagram.com/andres.choque23/" id='Instagram' target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-instagram-account'><FontAwesomeIcon icon={faInstagram}/></a>
+                        <a href="https://twitter.com/andres_choque23" id='Twitter' target='_blank' rel='noreferrer noopener' aria-label='Andres-choque-twitter-account'><FontAwesomeIcon icon={faXTwitter}/></a>
+                        <a href="https://www.linkedin.com/in/andreschoque23/" id='LinkedIn' target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-linkedin-account'><FontAwesomeIcon icon={faLinkedin}/></a>
+                        <a href="https://github.com/andreschoque3" id='GitHub' target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-github-account'><FontAwesomeIcon icon={faGithub}/></a>
                     </div>
                 </div>
 
                 <div className="contact-b">
                     <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
-                        <input type="text" name="Name" placeholder="Name" required/>
-                        <input type="email" name="Email" placeholder="Email" required/>
-                        <textarea name="Message" id=""  rows="6" placeholder="Message" className='no-resize'></textarea>
+                        <input type="text" name="Name" placeholder="Name" id='Name' required/>
+                        <input type="email" name="Email" placeholder="Email" id='Email' required/>
+                        <textarea name="Message" id="Message"  rows="6" placeholder="Message" className='no-resize'></textarea>
                         <div className='align-btn'>
-                          <button type="submit" className="btn btncv">Submit</button>
+                          <button id='Submit' type="submit" className="btn btncv">Submit</button>
                         </div>
                     </form>
                 </div>
