@@ -4,12 +4,14 @@ import { toast } from 'react-toastify';
 
 function Form() {
 
+  const apiKey = process.env.REACT_APP_WEB3FORMS_API_KEY
+
     // Email functionality
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "efae9b3c-bf15-4bd7-91ed-ff9435feb4d9");
+    formData.append("access_key", apiKey);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);

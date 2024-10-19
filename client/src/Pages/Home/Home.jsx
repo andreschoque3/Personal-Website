@@ -106,7 +106,7 @@ function Home() {
     ];
 
   // Contact form functionality
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyiMFJxNG-Oe1735pct_MGwOk1EhP7t5LKAu9u4KHLdk_NqJIPJiSrXQrbs6Lzco8j7/exec';
+  const scriptURL = process.env.REACT_APP_GOOGLE_SCRIPT;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -5,12 +5,12 @@ import blog3 from '../Blog/Images/blog3.jpg'
 import blog4 from '../Blog/Images/blog4.jpg'
 import '../../Components/Navbar/Navbar.css'
 import './Blog.css'
-import { Link } from 'react-router-dom'
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Form from '../../Components/Newsletter_Form/Form';
+import BlogBox from '../../Components/Divs/BlogBox';
 
 function Blog() {
 
@@ -18,6 +18,39 @@ function Blog() {
   useEffect(() => {
     document.title = 'Blog - Andres Choque';
   }, []);
+
+  // Blog data
+  const Blogdata = [
+    {
+      imgSrc: blog4,
+      imgAlt: 'Blog-card-1',
+      blogTitle: 'Why Learn Code? You Solve Problems 50% Faster',
+      blogLink: '/blog/why-learn-code-you-will-solve-problems-50-faster',
+      blogDate: 'August 8, 2024'
+    },
+    {
+      imgSrc: blog3,
+      imgAlt: 'Blog-card-2',
+      blogTitle: 'You Are One Mentor Away From Changing Your Life (Growth is Inevitable)',
+      blogLink: '/blog/you-are-one-mentor-away-from-changing-your-life',
+      blogDate: 'July 28, 2024'
+    },
+    {
+      imgSrc: blog2,
+      imgAlt: 'Blog-card-3',
+      blogTitle: 'The Value of Travel and Where You Should Consider Going',
+      blogLink: '/blog/the-value-of-travel',
+      blogDate: 'July 14, 2024'
+    },
+    {
+      imgSrc: blog1,
+      imgAlt: 'Blog-card-4',
+      blogTitle: 'How to be Intentional After School (With 3 Effective Steps)',
+      blogLink: '/blog/how-to-be-intentional-after-school',
+      blogDate: 'June 23, 2024'
+    }
+    
+  ];
 
   return (
     <div>
@@ -59,45 +92,16 @@ function Blog() {
         </div>
 
         <div className='blog-list'>
-          <div className='blog'>
-            <img src={blog4} alt="Blog-card-1" />
-            <h3>Why Learn Code? You Solve Problems 50% Faster</h3>
-            <div className='blog-link'>
-              <Link to={'/blog/why-learn-code-you-will-solve-problems-50-faster'}>Read Full Post</Link>
-            </div>
-            <hr />
-            <p className='author'>Andres Choque &nbsp; • &nbsp; August 8, 2024</p>
-          </div>
-
-          <div className='blog'>
-            <img src={blog3} alt="Blog-card-2" />
-            <h3>You Are One Mentor Away From Changing Your Life (Growth is Inevitable)</h3>
-            <div className='blog-link'>
-              <Link to={'/blog/you-are-one-mentor-away-from-changing-your-life'}>Read Full Post</Link>
-            </div>
-            <hr />
-            <p className='author'>Andres Choque &nbsp; • &nbsp; July 28, 2024</p>
-          </div>
-
-          <div className='blog'>
-            <img src={blog2} alt="Blog-card-3" />
-            <h3>The Value of Travel and Where You Should Consider Going</h3>
-            <div className='blog-link'>
-              <Link to={'/blog/the-value-of-travel'}>Read Full Post</Link>
-            </div>
-            <hr />
-            <p className='author'>Andres Choque &nbsp; • &nbsp; July 14, 2024</p>
-          </div>
-
-          <div className='blog'>
-            <img src={blog1} alt="Blog-card-4" />
-            <h3>How to be Intentional After School (With 3 Effective Steps)</h3>
-            <div className='blog-link'>
-              <Link to={'/blog/how-to-be-intentional-after-school'}>Read Full Post</Link>
-            </div>
-            <hr />
-            <p className='author'>Andres Choque &nbsp; • &nbsp; June 23, 2024</p>
-          </div>
+          {Blogdata.map((blogs, index) => (
+              <BlogBox
+                key={index}
+                imgSrc={blogs.imgSrc}
+                imgAlt={blogs.imgAlt}
+                blogTitle={blogs.blogTitle}
+                blogLink={blogs.blogLink}
+                blogDate={blogs.blogDate}
+              />
+          ))}
         </div>
       </div>
 
