@@ -3,6 +3,7 @@ import blog1 from '../Blog/Images/blog1.jpg'
 import blog2 from '../Blog/Images/blog2.jpg'
 import blog3 from '../Blog/Images/blog3.jpg'
 import blog4 from '../Blog/Images/blog4.jpg'
+import blog5 from '../Blog/Images/blog5.jpg'
 import '../../Components/Navbar/Navbar.css'
 import './Blog.css'
 import 'react-toastify/dist/ReactToastify.css';
@@ -22,29 +23,36 @@ function Blog() {
   // Blog data
   const Blogdata = [
     {
-      imgSrc: blog4,
+      imgSrc: blog5,
       imgAlt: 'Blog-card-1',
+      blogTitle: 'The Power of Walking (10,000 Steps a day Changed My Life)',
+      blogLink: '/blog/the-power-of-walking',
+      blogDate: 'October 22, 2024'
+    },
+    {
+      imgSrc: blog4,
+      imgAlt: 'Blog-card-2',
       blogTitle: 'Why Learn Code? You Solve Problems 50% Faster',
       blogLink: '/blog/why-learn-code-you-will-solve-problems-50-faster',
       blogDate: 'August 8, 2024'
     },
     {
       imgSrc: blog3,
-      imgAlt: 'Blog-card-2',
+      imgAlt: 'Blog-card-3',
       blogTitle: 'You Are One Mentor Away From Changing Your Life (Growth is Inevitable)',
       blogLink: '/blog/you-are-one-mentor-away-from-changing-your-life',
       blogDate: 'July 28, 2024'
     },
     {
       imgSrc: blog2,
-      imgAlt: 'Blog-card-3',
+      imgAlt: 'Blog-card-4',
       blogTitle: 'The Value of Travel and Where You Should Consider Going',
       blogLink: '/blog/the-value-of-travel',
       blogDate: 'July 14, 2024'
     },
     {
       imgSrc: blog1,
-      imgAlt: 'Blog-card-4',
+      imgAlt: 'Blog-card-5',
       blogTitle: 'How to be Intentional After School (With 3 Effective Steps)',
       blogLink: '/blog/how-to-be-intentional-after-school',
       blogDate: 'June 23, 2024'
@@ -62,7 +70,7 @@ function Blog() {
           {/* OG Tags */}
           <meta property="og:title" content="Blog - Andres Choque" />
           <meta property="og:description" content="Collection of thoughts and reflections." />
-          <meta property="og:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
+          <meta property="og:image" content="https://andreschoque.com/static/media/blog-bg.2277007bd37bf0f0b73b.jpg" />
           <meta property="og:url" content="https://andreschoque.com/blog" />
           <meta property="og:type" content="website" />
 
@@ -70,7 +78,7 @@ function Blog() {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Blog - Andres Choque" />
           <meta name="twitter:description" content="Collection of thoughts and observations." />
-          <meta name="twitter:image" content="https://andreschoque.com/static/media/blog-bg.1230c2caaa3e9048b9c2.jpg" />
+          <meta name="twitter:image" content="https://andreschoque.com/static/media/blog-bg.2277007bd37bf0f0b73b.jpg" />
           <meta name="twitter:url" content="https://andreschoque.com/blog"/>
       </Helmet>
 

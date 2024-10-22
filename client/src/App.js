@@ -9,6 +9,7 @@ import BlogPost1 from './Pages/Posts/BlogPost1';
 import BlogPost2 from './Pages/Posts/BlogPost2';
 import BlogPost3 from './Pages/Posts/BlogPost3';
 import BlogPost4 from './Pages/Posts/BlogPost4';
+import BlogPost5 from './Pages/Posts/BlogPost5';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/blog/the-value-of-travel' element={<BlogPost2/>}/>
           <Route path='/blog/you-are-one-mentor-away-from-changing-your-life' element={<BlogPost3/>}/>
           <Route path='/blog/why-learn-code-you-will-solve-problems-50-faster'element={<BlogPost4/>}/>
+          <Route path='/blog/the-power-of-walking' element={<BlogPost5/>}/>
         </Routes>
       </BrowserRouter>
       <ToastContainer/>
