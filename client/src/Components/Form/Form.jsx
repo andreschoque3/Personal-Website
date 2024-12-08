@@ -2,7 +2,7 @@ import React from 'react'
 import './Form.css'
 import { toast } from 'react-toastify';
 
-function Form() {
+const Form = ({ title, description, classes }) => {
 
   const apiKey = process.env.REACT_APP_WEB3FORMS_API_KEY
 
@@ -46,11 +46,15 @@ function Form() {
 
   return (
     <div>
-        <div className='form-container'>
-            <form onSubmit={onSubmit}>
-                <input type="email" name="Blog-Subcriber-Email" id="" placeholder='Your Email' required />
-                <button type='submit'>Join</button>
-            </form>
+        <div className={classes}>
+            <h1>{title}</h1>
+            <p>{description}</p>
+            <div className='form-container'>
+                <form onSubmit={onSubmit}>
+                        <input type="email" name="Blog-Subcriber-Email" id="" placeholder='Your Email' required />
+                        <button type='submit'>Join</button>
+                </form>
+            </div>
         </div>
     </div>
   )

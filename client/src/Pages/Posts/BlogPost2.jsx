@@ -6,7 +6,8 @@ import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Sharing from '../../Components/Sharing/Sharing';
-import BlogSubscriber from '../../Components/Blog_Subscriber/BlogSubscriber';
+import Form from '../../Components/Form/Form';
+import subData from '../../utils.js';
 
 function BlogPost2() {
 
@@ -44,7 +45,12 @@ function BlogPost2() {
       </div>
 
       <div className='blog-post-content'>
-        <BlogSubscriber/>
+
+        <Form
+          classes={subData[0].classes}
+          title={subData[0].title}
+          description={subData[0].description}
+        />
 
         <div className='blog-content-container'>
           <h1><strong>The Value of Travel and Where You Should Consider Going</strong></h1>

@@ -10,8 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
-import Form from '../../Components/Newsletter_Form/Form';
 import BlogBox from '../../Components/Divs/BlogBox';
+import Form from '../../Components/Form/Form';
 
 function Blog() {
 
@@ -19,6 +19,14 @@ function Blog() {
   useEffect(() => {
     document.title = 'Blog - Andres Choque';
   }, []);
+
+  const subsData = [
+    {
+       classes: 'subscriber-container',
+       title: 'Get the Latest News Straight to You',
+       description: 'Join to get a dose of inspiration, insights, and a fresh perspective on life and business.'
+    }
+  ]
 
   // Blog data
   const Blogdata = [
@@ -82,36 +90,33 @@ function Blog() {
           <meta name="twitter:url" content="https://andreschoque.com/blog"/>
       </Helmet>
 
-      <div className='blog-header'>
-        <div className='container'>
-          <Navbar/>
-        </div>
-        <div className='blog-title'>
-          <h1>Beyond Boundaries</h1>
-          <p>Navigating life's adventures through Business, Technology, & Lifestyle.</p>
-        </div>
-      </div>
-
-      <div className='blog-section'>
-        <div className='subscriber-container'>
-          <h1>Get the Latest News Straight to You</h1>
-          <p>Join to get a dose of inspiration, insights, and a fresh perspective on life and business.</p>
-          <Form/>
+        <div className='blog-header'>
+          <div className='container'>
+            <Navbar/>
+          </div>
         </div>
 
-        <div className='blog-list'>
-          {Blogdata.map((blogs, index) => (
-              <BlogBox
-                key={index}
-                imgSrc={blogs.imgSrc}
-                imgAlt={blogs.imgAlt}
-                blogTitle={blogs.blogTitle}
-                blogLink={blogs.blogLink}
-                blogDate={blogs.blogDate}
-              />
-          ))}
+        <div className='blog-section'>
+
+          <Form
+              classes={subsData[0].classes}
+              title={subsData[0].title}
+              description={subsData[0].description}
+          />
+          
+          <div className='blog-list'>
+            {Blogdata.map((blogs, index) => (
+                <BlogBox
+                  key={index}
+                  imgSrc={blogs.imgSrc}
+                  imgAlt={blogs.imgAlt}
+                  blogTitle={blogs.blogTitle}
+                  blogLink={blogs.blogLink}
+                  blogDate={blogs.blogDate}
+                />
+            ))}
+          </div>
         </div>
-      </div>
 
       <Footer/>
     </div>
