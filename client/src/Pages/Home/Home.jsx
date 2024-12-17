@@ -5,12 +5,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer';
 import AbtPic from './Images/Andres-Choque-small.jpg'
-import workpic7 from './Images/java-loco.png'
 import workpic1 from './Images/tactica.png'
 import workpic2 from './Images/drontec.png'
 import workpic4 from './Images/cfl.png'
-import workpic5 from './Images/github-projects.png'
 import workpic6 from './Images/andres-website-2.png'
+import workpic7 from './Images/java-loco.png'
+import workpic8 from './Images/taxcons.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faPenRuler, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
@@ -261,11 +261,19 @@ function Home() {
             <h1 className='sub-header'>Portfolio</h1>
 
             <div className='work-list'>
+                <div className='work'>
+                    <img src={workpic8} alt="tax-consultants-na" />
+                    <div className='layer'>
+                      <h3><strong>Tax Consultants</strong></h3>
+                      <a href="https://andreschoque3.github.io/Tax_website/"  target="_blank" rel="noreferrer noopener" aria-label='Tax-consultants-website-link'><FontAwesomeIcon icon={faLocationArrow}/></a>
+                    </div>
+                </div>
+
                 <div className="work">
                     <img src={workpic7} alt='Java-loco' />
                     <div className="layer">
                        <h3><strong>Java Loco</strong></h3>
-                       <a href="https://andreschoque3.github.io/Coffee_website/" target="_blank" rel="noreferrer noopener" aria-label='Tactica-ministries-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a>
+                       <a href="https://andreschoque3.github.io/Coffee_website/" target="_blank" rel="noreferrer noopener" aria-label='Java-Loco-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a>
                     </div>
                 </div>
 
@@ -273,34 +281,26 @@ function Home() {
                     <img src={workpic1} alt='Tactica-ministries' />
                     <div className="layer">
                        <h3><strong>TACTICA Ministries</strong></h3>
-                       <a href="https://tacticaministries.org/" target="_blank" rel="noreferrer noopener" aria-label='Tactica-ministries-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a>
-                    </div>
-                </div>
-
-                <div className="work">
-                    <img src={workpic2} alt='Drontec' />
-                    <div className="layer">
-                       <h3><strong>Drontec</strong></h3>    
-                       <a href="https://drontec.org/" target="_blank" rel="noreferrer noopener" aria-label='Drontec-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
+                       <a href="https://tacticaministries.org/" target="_blank" rel="noreferrer noopener" aria-label='Tactica-Ministries-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a>
                     </div>
                 </div>
             </div>
 
             {showMore && (
-            <div className="work-list">          
+            <div className="work-list">
                 <div className="work">
-                    <img src={workpic4} alt='Center-for-financial-literacy' />
-                    <div className="layer">
-                        <h3><strong>Finance App</strong></h3>
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7061417643429257216/" target="_blank" rel="noreferrer noopener" aria-label='Center-for-financial-literacy-linkedin-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
-                     </div>
+                      <img src={workpic2} alt='Drontec' />
+                      <div className="layer">
+                        <h3><strong>Drontec</strong></h3>    
+                        <a href="https://drontec.bo/" target="_blank" rel="noreferrer noopener" aria-label='Drontec-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
+                      </div>
                 </div>
 
                 <div className="work">
-                    <img src={workpic5} alt='Andres-Choque-Github' />
+                    <img src={workpic4} alt='Center-for-financial-literacy' />
                     <div className="layer">
-                        <h3><strong>School Projects</strong></h3>
-                        <a href="https://github.com/andreschoque3/LU-School-Projects" target="_blank" rel="noreferrer noopener" aria-label='Andres-choque-github-webpage'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
+                        <h3><strong>CFL</strong></h3>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7061417643429257216/" target="_blank" rel="noreferrer noopener" aria-label='Center-for-financial-literacy-linkedin-link'> <FontAwesomeIcon icon={faLocationArrow}/></a> 
                      </div>
                 </div>
 
