@@ -6,7 +6,7 @@ function Footer() {
     <div>
         <div>
             <div className="copyright">
-            <p>©️ 2024 Andres Choque. All rights reserved.</p>
+            <p>© 2025 Andres Choque. All rights reserved.</p>
           </div>
         </div>
     </div>

@@ -10,7 +10,7 @@ import workpic2 from './Images/drontec.png'
 import workpic4 from './Images/cfl.png'
 import workpic6 from './Images/andres-website-2.png'
 import workpic7 from './Images/java-loco.png'
-import workpic8 from './Images/taxcons.png'
+import workpic8 from './Images/cwc.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faPenRuler, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
@@ -84,8 +84,8 @@ function Home() {
     },
     {
       icon: faUsers,
-      title: "Mentorship",
-      description: "I guide technology professionals in achieving their career goals by offering tailored mentorship and clear career roadmaps."
+      title: "Coaching",
+      description: "I guide young professionals in achieving their career goals by offering tailored mentorship and clear career roadmaps."
     }
   ];
 
@@ -93,15 +93,18 @@ function Home() {
     const testimonialsData = [
       {
         author: "Ryan & Gretchen",
-        description: "Andres worked hard to bring our (complex!) vision to life, and we couldn’t be more pleased with the result. Thank you, for your contributions, patience, and for setting a new standard of excellence with this launch!"
+        description: "Andres worked hard to bring our (complex!) vision to life, and we couldn’t be more pleased with the result. Thank you, for your contributions, patience, and for setting a new standard of excellence with this launch!",
+        workplace: "TACTICA Minstries"
       },
       {
         author: "Antonio",
-        description: "Andres was a great young professional to work alongside with. His eye for design allowed our vision to come about. He communicates effectively, works in a timely manner, and demonstrated a high level of skill for this project."
+        description: "Andres is a great young professional to work alongside with. His eye for design allowed our vision to come about. He communicates effectively, works in a timely manner, and demonstrated a high level of professionalism.",
+        workplace: 'Drontec'
       },
       {
         author: "Robert",
-        description: "Andres brought a strong level of technical aptitude to this project. I am grateful to have him be a part of the project. His level of dedication and humility has made him a strong and effective member of our team."
+        description: "Andres brought a strong level of technical aptitude to this project. I am grateful to have him be a part of the project. His level of dedication and humility has made him a strong and effective member of our team.",
+        workplace: 'Liberty University'
       }
     ];
 
@@ -264,8 +267,8 @@ function Home() {
                 <div className='work'>
                     <img src={workpic8} alt="tax-consultants-na" />
                     <div className='layer'>
-                      <h3><strong>Tax Consultants</strong></h3>
-                      <a href="https://andreschoque3.github.io/Tax_website/"  target="_blank" rel="noreferrer noopener" aria-label='Tax-consultants-website-link'><FontAwesomeIcon icon={faLocationArrow}/></a>
+                      <h3><strong>Capital Coolers</strong></h3>
+                      <a href="https://andreschoque3.github.io/CWC_Website/"  target="_blank" rel="noreferrer noopener" aria-label='Tax-consultants-website-link'><FontAwesomeIcon icon={faLocationArrow}/></a>
                     </div>
                 </div>
 
@@ -273,7 +276,7 @@ function Home() {
                     <img src={workpic7} alt='Java-loco' />
                     <div className="layer">
                        <h3><strong>Java Loco</strong></h3>
-                       <a href="https://andreschoque3.github.io/Coffee_website/" target="_blank" rel="noreferrer noopener" aria-label='Java-Loco-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a>
+                       <a href="https://andreschoque3.github.io/Java_Loco_website/" target="_blank" rel="noreferrer noopener" aria-label='Java-Loco-website-link'> <FontAwesomeIcon icon={faLocationArrow}/></a>
                     </div>
                 </div>
 
@@ -331,7 +334,8 @@ function Home() {
                     <TestBox 
                       key={index}
                       author={testimonial.author} 
-                      description={testimonial.description} 
+                      description={testimonial.description}
+                      workplace={testimonial.workplace}
                     />
                 ))}
               </div>

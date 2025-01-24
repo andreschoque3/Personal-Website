@@ -8,9 +8,9 @@ const WorkBox = ({ imgSrc, alt, title, link, ariaLabel }) => {
       <img src={imgSrc} alt={alt} />
       <div className="layer">
         <h3><strong>{title}</strong></h3>
-        <a href={link} target="_blank" rel="noreferrer noopener" aria-label={ariaLabel}>
-          <FontAwesomeIcon icon={faLocationArrow} />
-        </a>
+          <a href={link} target="_blank" rel="noreferrer noopener" aria-label={ariaLabel}>
+            <FontAwesomeIcon icon={faLocationArrow} />
+          </a>
       </div>
     </div>
   );

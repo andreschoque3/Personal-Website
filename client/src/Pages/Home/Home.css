@@ -310,7 +310,6 @@ strong {
 
 .testimonials {
     display: flex;
-    
     gap: 40px;
     margin: 50px 0;
 }
@@ -336,6 +335,11 @@ strong {
 
 .test-box p {
     line-height: 30px;
+}
+
+.test-box h2 {
+    text-align: center;
+    color: #ef5327;
 }
 
 
