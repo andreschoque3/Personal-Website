@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../../Components/Navbar/Navbar.css'
 import '../Blog/Blog.css'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Sharing from '../../Components/Sharing/Sharing';
@@ -91,6 +91,8 @@ function BlogPost4() {
                     
                     <p>A high value skill is a skill that helps entities and businesses generate more value for themselves. For a high value skill to be considered as such it much have these criteria:</p>
 
+                    <br />
+
                     <div className='emphasis'>
                         <p><strong className='newton'>1) It must be dynamic/transferable.</strong></p>
 
@@ -98,6 +100,8 @@ function BlogPost4() {
 
                         <p><strong className='newton'>3) It must be market favorable.</strong></p>
                     </div>
+
+                    <br />
 
                     <p>It must be dynamic/transferable meaning that you can apply this skill anywhere you go meaning you can apply this same skill anywhere from a coffee shop to a software startup.</p>
 
@@ -146,7 +150,7 @@ function BlogPost4() {
 
                     <br />
 
-                    <p><em className='newton'>How do you leverage code?</em></p>
+                    <h3><em className='newton'>How do you leverage code?</em></h3>
 
                     <br />
                     
@@ -194,6 +198,8 @@ function BlogPost4() {
                     <br />
 
                     <p>I hope this helps you and your new interest in coding.</p>
+
+                    <br />
 
                     <p>Blessings,</p>
 

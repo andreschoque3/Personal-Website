@@ -14,7 +14,7 @@ import workpic8 from './Images/cwc.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faPenRuler, faScrewdriverWrench, faGraduationCap, faBriefcase, faUsers, faFileArrowDown, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedin, faGithub, faXTwitter} from '@fortawesome/free-brands-svg-icons'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { ReactTyped } from 'react-typed';
 import ServiceBox from '../../Components/Divs/ServiceBox';
 import TestBox from '../../Components/Divs/TestBox';

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../../Components/Navbar/Navbar.css'
 import '../Blog/Blog.css'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Sharing from '../../Components/Sharing/Sharing';
@@ -91,6 +91,8 @@ function BlogPost3() {
                     
                     <p>Bismarck is not the only one providing mentorship, there are multiple creators providing guidance, wisdom, and mentorship. They can even be separated into different categories for example:</p>
 
+                    <br />
+                    
                     <div className='emphasis'>
                         <p>- Benjamin Seda: His YouTube channel (formerly known as Based Zeus) provides dating coaching/mentorship.</p>
 
@@ -103,6 +105,8 @@ function BlogPost3() {
                         <p>- Dan Koe: Gives wisdom on entrepreneurship, self-help, and business.</p>
                     </div>
 
+                    <br />
+                    
                     <p>The list goes on and on. Why is that the case? Why are there so many creators who are in the space of coaching/mentorship?</p>
 
                     <br />
@@ -177,7 +181,11 @@ function BlogPost3() {
                     
                     <p>I want you to become something greater. Get a mentor as soon as you can.</p>
 
+                    <br />
+
                     <p>I hope this helps you in your personal development journey.</p>
+
+                    <br />
 
                     <p>Blessings,</p>
 

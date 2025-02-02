@@ -83,7 +83,7 @@
 
 .blog-body p {
     text-align: left;
-    line-height: 60px;
+    line-height: 40px;
     font-size: 20px;
 }
 
@@ -140,7 +140,7 @@
 
 @media screen and (max-width: 800px) {
     .blog-header {
-        height: 80vh;
+        height: 10vh;
     }
 
 

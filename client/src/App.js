@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import Home from './Pages/Home/Home';
 import Blog from './Pages/Blog/Blog';
@@ -13,8 +13,14 @@ import BlogPost5 from './Pages/Posts/BlogPost5';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <HelmetProvider>
+      <div className="App">
+      <BrowserRouter
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+      >
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/blog' element={<Blog/>}/>
@@ -28,6 +34,7 @@ function App() {
       </BrowserRouter>
       <ToastContainer/>
     </div>
+    </HelmetProvider>
   );
 }
 

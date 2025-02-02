@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../../Components/Navbar/Navbar.css'
 import '../Blog/Blog.css'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Sharing from '../../Components/Sharing/Sharing';
@@ -68,7 +68,7 @@ function BlogPost2() {
             
             <br />
 
-            <p>And that got me thinking, why is there a surge of this type of content? Is it because it’s summer over here in the US? What else is it?</p>
+            <p>And that got me thinking, why is there a surge of this type of content? Is it because it's summer over here in the US? What else is it?</p>
 
             <br />
 
@@ -81,7 +81,7 @@ function BlogPost2() {
 
             <br />
 
-            <p>I understand that traveling is a privilege and not many people have access to it. That’s why my focus will be on the act of going somewhere else that is new. – whether 
+            <p>I understand that traveling is a privilege and not many people have access to it. That's why my focus will be on the act of going somewhere else that is new. - whether 
               it is a new town, a city close by or a small road trip. Travel, even in its smallest form, is something that everyone should invest in.</p>
 
             <br />
@@ -91,9 +91,11 @@ function BlogPost2() {
             <br />
 
             <p>Allow me to illustrate this picture:</p>
+            
+            <br />
 
             <p>Imagine yourself you had the opportunity to go somewhere but instead you chose to stay at the same place you started. 10 years later. You regret your decision. You keep 
-              thinking to yourself about all of the chances you had to explore, open your mind, and get out of your comfort zone. If only you took that chance to travel you would’ve 
+              thinking to yourself about all of the chances you had to explore, open your mind, and get out of your comfort zone. If only you took that chance to travel you would've 
               learned so much about other cultures and even meet the love of your life. But at the end of the day, you decided not to. And now you face a different reality.</p>
 
             <br />
@@ -104,13 +106,15 @@ function BlogPost2() {
 
             <p>After speaking and listening to their stories about their youth I soon realized that there is much value to traveling. This sentiment of not being able to take advantage 
               of their opportunity to travel hindered their careers, business opportunities, networking opportunities, and friendships. Another observation that I have made is that people 
-              are not familiar with certain countries and cultures. – I see this prevalent in the US.</p>
+              are not familiar with certain countries and cultures. - I see this prevalent in the US.</p>
 
             <br />
 
             <p>I get questions like:</p>
 
-            <p>“Where is Bolivia…is that in Africa?” “Do you speak ‘Bolivian’?” “What’s Bolivia?”</p>
+            <br />
+
+            <p>“Where is Bolivia…is that in Africa?” “Do you speak 'Bolivian'?” “What's Bolivia?”</p>
 
             <br />
 
@@ -228,12 +232,20 @@ function BlogPost2() {
 
             <p>Great question, the correct answer is wherever you are going to be pushed from your comfort zone. Whether that’s an international trip or a road trip to a different city.</p>
 
+            <br />
+            
             <p>The best course of action - is to take action. Now go book your next trip.</p>
 
+            <br />
+            
             <p>You will evolve as a human.</p>
 
+            <br />
+            
             <p>I hope this helps you plan your next adventure.</p>
 
+            <br />
+            
             <p>Blessings,</p>
 
             <p>- <em>Andres</em></p>

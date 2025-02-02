@@ -310,6 +310,7 @@ strong {
 
 .testimonials {
     display: flex;
+    justify-content: center;
     gap: 40px;
     margin: 50px 0;
 }
@@ -481,5 +482,9 @@ form .btncv {
 
     .contact-t p {
         font-size: 16px;
+    }
+
+    .test-box {
+        width: 80vw;
     }
 }

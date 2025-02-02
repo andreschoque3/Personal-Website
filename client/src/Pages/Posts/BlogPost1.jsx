@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../../Components/Navbar/Navbar.css'
 import '../Blog/Blog.css'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import Sharing from '../../Components/Sharing/Sharing';
@@ -62,22 +62,22 @@ function BlogPost1() {
 
           <div className='blog-body'>
             <div className='container-blog'>
-            <p>Let’s picture this – it’s THE fateful day, you wake up get ready and head over to the venue or location your graduation ceremony is being conducted, you feel excited and anxious at the same time. 
+            <p>Let's picture this - it's THE fateful day, you wake up get ready and head over to the venue or location your graduation ceremony is being conducted, you feel excited and anxious at the same time. 
               You are about to embark on a new chapter after completing this one. You give a last glance at the long nights of studying, preparing for exams, and late-night hangouts with your friends. The 
               dean/professor or teacher calls your name, all those feelings rush into your system, and you are the happiest after receiving your diploma. Your family is there to cheer you on! Everyone is proud 
               of your accomplishments!</p>
 
             <br />
 
-            <p>That’s it, you did it!</p>
+            <p>That's it, you did it!</p>
 
             <br />
 
-            <p>Now, let’s fast forward a little bit, you already have your degree, now you landed your job.</p>
+            <p>Now, let's fast forward a little bit, you already have your degree, now you landed your job.</p>
 
             <br />
 
-            <p>The first few months you are excited to learn all about the company and their values and experience the work life you now have. More time has passed by, but now you noticed the ‘shing object’ isn’t 
+            <p>The first few months you are excited to learn all about the company and their values and experience the work life you now have. More time has passed by, but now you noticed the 'shing object' isn't 
               as shiny anymore. The day-to-day has become mundane and boring. All the excitement and energy you had has already worn off. Now you have become stuck. Needing the next thing.</p>
             
             <br />
@@ -86,21 +86,21 @@ function BlogPost1() {
 
             <br />
 
-            <p>What happened? Where did the momentum go? Where did time go? What happened to my friends? – these are all valid questions.</p>
+            <p>What happened? Where did the momentum go? Where did time go? What happened to my friends? - these are all valid questions.</p>
 
             <br />
 
-            <p>If you have experienced this, you are not the only one but if you haven’t that’s great! Keep it up! This, my friend, is what happens to many if not all recent graduates after they finish school.
-              Let this moment not discourage you, but instead do the opposite – encourage you. This moment is pivotal since it will force you to act on it.</p>
+            <p>If you have experienced this, you are not the only one but if you haven't that's great! Keep it up! This, my friend, is what happens to many if not all recent graduates after they finish school.
+              Let this moment not discourage you, but instead do the opposite - encourage you. This moment is pivotal since it will force you to act on it.</p>
 
             <br />
 
-            <p>What do I mean by acting on this ‘feeling’? I mean you either take two options:</p>
+            <p>What do I mean by acting on this 'feeling'? I mean you either take two options:</p>
 
             <br />
 
             <div className='emphasis'>
-              <p><strong>A) You keep living your life as is and keep feeling ‘stuck’.</strong></p>
+              <p><strong>A) You keep living your life as is and keep feeling 'stuck'.</strong></p>
 
               <p>Or</p>
 
@@ -137,11 +137,15 @@ function BlogPost1() {
 
             <br />
 
-            <p><strong className='newton'>Objects at rest stay at rest</strong>: meaning if something isn’t moving, it will not move on its own. Unless something else changes that state. For example, a book on a table will stay there until you push or pull it.</p>
+            <p><strong className='newton'>Objects at rest stay at rest:</strong> meaning if something isn’t moving, it will not move on its own. Unless something else changes that state. For example, a book on a table will stay there until you push or pull it.</p>
 
-            <p><strong className='newton'>Objects in motion stay in motion</strong>: meaning If something is already moving, it will keep moving in the same direction and at the same speed unless something else makes it change. For example, a ball rolling on the ground will keep rolling until friction, a bump, or someone stops it.</p>
+            <br />
 
-            <p><strong className='newton'>Unless acted upon by an unbalanced force</strong>: This means that an object's motion (or lack of motion) will only change if something pushes or pulls on it. For example, a soccer ball won't move unless you kick it, and once it's moving, it will eventually stop because of friction with the ground and air resistance.</p>
+            <p><strong className='newton'>Objects in motion stay in motion:</strong> meaning If something is already moving, it will keep moving in the same direction and at the same speed unless something else makes it change. For example, a ball rolling on the ground will keep rolling until friction, a bump, or someone stops it.</p>
+
+            <br />
+            
+            <p><strong className='newton'>Unless acted upon by an unbalanced force:</strong> This means that an object's motion (or lack of motion) will only change if something pushes or pulls on it. For example, a soccer ball won't move unless you kick it, and once it's moving, it will eventually stop because of friction with the ground and air resistance.</p>
 
             <br />
            
@@ -314,7 +318,11 @@ function BlogPost1() {
             
             <p>That’s the whole point. These steps are to be completed continuously as you keep progressing and growing as an individual.</p>
 
+            <br />
+
             <p>I hope this helps you and your journey.</p>
+
+            <br />
 
             <p>Blessings,</p>
 

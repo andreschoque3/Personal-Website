@@ -7,7 +7,7 @@ import blog5 from '../Blog/Images/blog5.jpg'
 import '../../Components/Navbar/Navbar.css'
 import './Blog.css'
 import 'react-toastify/dist/ReactToastify.css';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import BlogBox from '../../Components/Divs/BlogBox';
@@ -35,7 +35,7 @@ function Blog() {
       imgAlt: 'Blog-card-1',
       blogTitle: 'The Power of Walking (10,000 Steps a day Changed My Life)',
       blogLink: '/blog/the-power-of-walking',
-      blogDate: 'October 22, 2024'
+      blogDate: 'February 2, 2025'
     },
     {
       imgSrc: blog4,
