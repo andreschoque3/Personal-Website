@@ -35,7 +35,7 @@ function Blog() {
       imgAlt: 'Blog-card-1',
       blogTitle: 'The Power of Walking (10,000 Steps a day Changed My Life)',
       blogLink: '/blog/the-power-of-walking',
-      blogDate: 'February 2, 2025'
+      blogDate: 'February 3, 2025'
     },
     {
       imgSrc: blog4,
