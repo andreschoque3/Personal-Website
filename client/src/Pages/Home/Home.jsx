@@ -37,7 +37,7 @@ function Home() {
     const handleDownloadResume = async () => {
       try {
           // Fetch the resume file from the public folder
-          const response = await fetch('/Andres_Choque_Resume_2024.pdf');
+          const response = await fetch('/Andres_Choque_Resume_2025.pdf');
           const blob = await response.blob();
 
           // Create a URL for the blob object
@@ -46,7 +46,7 @@ function Home() {
           // Create an anchor element with the URL and trigger download
           const link = document.createElement('a');
           link.href = url;
-          link.setAttribute('download', "Andres Choque Resume 2024.pdf");
+          link.setAttribute('download', "Andres Choque Resume 2025.pdf");
           document.body.appendChild(link);
           link.click();
 
