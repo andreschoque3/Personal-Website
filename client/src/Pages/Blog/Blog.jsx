@@ -4,6 +4,7 @@ import blog2 from '../Blog/Images/blog2.jpg'
 import blog3 from '../Blog/Images/blog3.jpg'
 import blog4 from '../Blog/Images/blog4.jpg'
 import blog5 from '../Blog/Images/blog5.jpg'
+import blog6 from '../Blog/Images/blog6.jpg'
 import '../../Components/Navbar/Navbar.css'
 import './Blog.css'
 import 'react-toastify/dist/ReactToastify.css';
@@ -31,36 +32,43 @@ function Blog() {
   // Blog data
   const Blogdata = [
     {
-      imgSrc: blog5,
+      imgSrc: blog6,
       imgAlt: 'Blog-card-1',
+      blogTitle: 'What Do You Fear? (How to Use Fear to Your Advantage)',
+      blogLink: '/blog/what-do-you-fear',
+      blogDate: 'March 28, 2025'
+    },
+    {
+      imgSrc: blog5,
+      imgAlt: 'Blog-card-2',
       blogTitle: 'The Power of Walking (10,000 Steps a day Changed My Life)',
       blogLink: '/blog/the-power-of-walking',
       blogDate: 'February 3, 2025'
     },
     {
       imgSrc: blog4,
-      imgAlt: 'Blog-card-2',
+      imgAlt: 'Blog-card-3',
       blogTitle: 'Why Learn Code? You Solve Problems 50% Faster',
       blogLink: '/blog/why-learn-code-you-will-solve-problems-50-faster',
       blogDate: 'August 8, 2024'
     },
     {
       imgSrc: blog3,
-      imgAlt: 'Blog-card-3',
+      imgAlt: 'Blog-card-4',
       blogTitle: 'You Are One Mentor Away From Changing Your Life (Growth is Inevitable)',
       blogLink: '/blog/you-are-one-mentor-away-from-changing-your-life',
       blogDate: 'July 28, 2024'
     },
     {
       imgSrc: blog2,
-      imgAlt: 'Blog-card-4',
+      imgAlt: 'Blog-card-5',
       blogTitle: 'The Value of Travel and Where You Should Consider Going',
       blogLink: '/blog/the-value-of-travel',
       blogDate: 'July 14, 2024'
     },
     {
       imgSrc: blog1,
-      imgAlt: 'Blog-card-5',
+      imgAlt: 'Blog-card-6',
       blogTitle: 'How to be Intentional After School (With 3 Effective Steps)',
       blogLink: '/blog/how-to-be-intentional-after-school',
       blogDate: 'June 23, 2024'

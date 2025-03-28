@@ -5,7 +5,7 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)),
     url(./Images/background-header.jpg);
     position: relative;
 }
@@ -15,8 +15,9 @@
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
+    text-align: center;
 }
 
 .header-text p {
@@ -24,25 +25,27 @@
 }
 
 .header-text h1 {
-    font-size: 75px;
+    font-size: 95px;
 }
 
 .header-text h2 {
-    font-size: 23px;
+    font-size: 33px;
     font-weight: normal;
 }
 
+.btn-align {
+    text-align: center;
+    margin-top: 25px;
+}
+
 .header-btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
+    margin: 50px;
     border: 1px solid #ef5327;
-    padding: 10px 20px;
+    padding: 10px 60px;
     border-radius: 6px;
     text-decoration: none;
     color: white;
     transition: background 0.5s;
-    position: absolute;
     margin-top: 1%;
     font-size: 20px;
 }
@@ -83,6 +86,8 @@ strong {
 .abt-col-1 img {
     width: 100%;
     border-radius: 15px;
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 #ef5327;
 }
 
 .abt-col-2 {
@@ -315,11 +320,13 @@ strong {
     margin: 50px 0;
 }
 
+
 .test-box {
     border: 1px solid #ef5327;
     border-radius: 10px;
     padding: 50px 30px;
-    width: 100vw;
+    width: 380px;
+    overflow: hidden;
     transition: 0.5s ease;
     cursor: pointer;
 }
@@ -413,27 +420,51 @@ form .btncv {
     resize: none;
 }
 
+/**********Coaching**********/
+
+.coach-text {
+    margin: 60px 0;
+    text-align: center;
+}
+.coach-text h1 {
+    font-size: 40px;
+    color: #ef5327;
+}
+
+.coach-text p {
+    width: 80%;
+    margin: auto;
+}
+
+.google {
+    background-color: white;
+    width: 50vw;
+    height: 100vh;
+    margin: auto;
+    border-radius: 5px;
+}
+
 /**********Responsive section**********/
 
 @media screen and (max-width: 800px) {
     .header-text {
         margin-top: 100%;
-        font-size: 18px;
-        margin-right: 40px;
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .header-text h2 {
         margin-top: 20px;
+        font-size: 18px;
     }
 
     .header-btn {
-        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
     }
-
+    
     .sub-header {
         font-size: 40px;
     }
@@ -486,5 +517,21 @@ form .btncv {
 
     .test-box {
         width: 80vw;
+    }
+    .coach-text h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    .coach-text p {
+        width: 100%;
+    }
+    
+    .google {
+        background-color: white;
+        width: 100%;
+        height: 50%;
+        margin: auto;
+        border-radius: 5px;
     }
 }

@@ -18,9 +18,11 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "react-share": "^5.1.0",
+    "react-slick": "^0.30.3",
     "react-snap": "^1.23.0",
     "react-toastify": "^10.0.5",
     "react-typed": "^2.0.12",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

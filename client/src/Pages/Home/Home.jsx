@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer';
-import AbtPic from './Images/Andres-Choque-small.jpg'
+import AbtPic from './Images/andres-nyc.jpg'
 import workpic1 from './Images/tactica.png'
 import workpic2 from './Images/drontec.png'
 import workpic4 from './Images/cfl.png'
@@ -18,6 +18,9 @@ import { Helmet } from 'react-helmet-async';
 import { ReactTyped } from 'react-typed';
 import ServiceBox from '../../Components/Divs/ServiceBox';
 import TestBox from '../../Components/Divs/TestBox';
+// import Slider from 'react-slick';
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 
 
 function Home() {
@@ -37,7 +40,7 @@ function Home() {
     const handleDownloadResume = async () => {
       try {
           // Fetch the resume file from the public folder
-          const response = await fetch('/Andres_Choque_Resume_2025.pdf');
+          const response = await fetch('/Andres_Choque_Resume.pdf');
           const blob = await response.blob();
 
           // Create a URL for the blob object
@@ -46,7 +49,7 @@ function Home() {
           // Create an anchor element with the URL and trigger download
           const link = document.createElement('a');
           link.href = url;
-          link.setAttribute('download', "Andres Choque Resume 2025.pdf");
+          link.setAttribute('download', "Andres Choque Resume.pdf");
           document.body.appendChild(link);
           link.click();
 
@@ -89,8 +92,23 @@ function Home() {
     }
   ];
 
+//   // carousel effect
+//   const settings = {
+//     infinite: true, // Loop through slides
+//     speed: 500,
+//     slidesToShow: 3, // Show 3 testimonials at a time
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+// };
+
   // Testimonial data 
     const testimonialsData = [
+      {
+        author: 'Kedar Kapoor',
+        description: 'Andres is a fantastic all around Engineer. He works super steady and persistent at the exact same speed. He is incredibly ethical, trustworthy, and consistent worker - and would improve any technical team that he joins.',
+        workplace: 'CyberZek'
+      },
       {
         author: "Ryan & Gretchen",
         description: "Andres worked hard to bring our (complex!) vision to life, and we couldn’t be more pleased with the result. Thank you, for your contributions, patience, and for setting a new standard of excellence with this launch!",
@@ -100,11 +118,6 @@ function Home() {
         author: "Antonio",
         description: "Andres is a great young professional to work alongside with. His eye for design allowed our vision to come about. He communicates effectively, works in a timely manner, and demonstrated a high level of professionalism.",
         workplace: 'Drontec'
-      },
-      {
-        author: "Robert",
-        description: "Andres brought a strong level of technical aptitude to this project. I am grateful to have him be a part of the project. His level of dedication and humility has made him a strong and effective member of our team.",
-        workplace: 'Liberty University'
       }
     ];
 
@@ -172,17 +185,18 @@ function Home() {
           <div className='container'>
             <Navbar/>
             <div className='header-text'>
-              <p>Hi, I'm</p>
               <h1>Andres Choque</h1>
               <h2>
                 <ReactTyped
-                  strings={["Software Engineer", "Tech Consultant", "Let's build solutions together."]}
-                  typeSpeed={40}
+                  strings={["Software Engineer", "Technical Consultant", "Let's build solutions together."]}
+                  typeSpeed={50}
                   backSpeed={20}
                   loop
                 />
               </h2>
-              <a href="#contact" id='Get-started' className="header-btn" aria-label='Get-started-button'>Get started</a> 
+              <div className='btn-align'>
+                <a href="#contact" id='Get-started' className="header-btn" aria-label='Get-started-button'>Get started</a> 
+              </div>
             </div>
           </div>
         </div>
@@ -198,8 +212,8 @@ function Home() {
                 </div>
               </div>
               <div className="abt-col-2">
-                      <p>I am a Software Engineer with a passion for technology, business, travel, and leadership. My specialty is on the <strong>Front-End (UX / UI)</strong>.
-                          I believe that any product's quality begins at the User Experience.
+                      <p>I am a technology enthusiast with a passion for technology, business, travel, and leadership. Specializing in <strong>Front-End</strong>.
+                          I believe that a product's quality begins with exceptional user experience.
                       </p>
                       <div className="tabs">
                         <p className={`tab-links ${activeTab === 'skills' ? 'act-link' : ''}`} onClick={() => openTab('skills')}><strong><FontAwesomeIcon className='tools' icon={faScrewdriverWrench}/> &nbsp; Skills</strong></p>
@@ -212,15 +226,15 @@ function Home() {
                               <li><span>Languages</span><br/>English and Spanish</li>
                               <li><span>Front-End</span><br/>React, Angular, Vue,  HTML, CSS, Bootstrap, JavaScript, TypeScript</li>
                               <li><span>Back-End</span><br/>Node, Express, Python, Django, PHP, Laravel, Ruby, Rails</li>
-                              <li><span>Database</span><br/>MongoDB, MySQL, SQL Server</li>
-                              <li><span>Tools</span><br/>Git, GitHub, BitBucket, Azure DevOps, Jira, Postman, Selenium</li>
+                              <li><span>Database</span><br/>MongoDB, MySQL</li>
+                              <li><span>Tools</span><br/>Git, GitHub, Azure DevOps, Jira, Postman, Azure Cloud, Selenium </li>
                               <li><span>Operating Systems</span><br/>Windows, Ubuntu, MacOS, FreeBSD</li>
                           </ul>
                       </div>
 
                       <div className={`tab-conts ${activeTab === 'experience' ? 'act-tab' : ''}`} id="experience">
                           <ul>
-                              <li><span>Nov 2024 &nbsp;-&nbsp; Present</span><br/>Technology Consultant | 616 Solutions Limited</li>
+                              <li><span>Nov 2024 &nbsp;-&nbsp; Mar 2025</span><br/>Technical Consultant | 616 Solutions Limited</li>
                               <li><span>Jul 2023 &nbsp;-&nbsp; Oct 2024</span><br/>Software Engineer II | CyberZek</li>
                               <li><span>May 2022 &nbsp;-&nbsp; Aug 2022</span><br/>Software Developer | Samaritan's Purse</li>
                               <li><span>May 2021 &nbsp;-&nbsp; Jul 2021</span><br/>Web Developer | CREOTEC</li>
@@ -330,7 +344,8 @@ function Home() {
               <h1 className='sub-header'>Testimonials</h1>
 
               <div className='testimonials'>
-                {testimonialsData.map((testimonial, index) => (
+                {/* <Slider {...settings}> */}
+                  {testimonialsData.map((testimonial, index) => (
                     <TestBox 
                       key={index}
                       author={testimonial.author} 
@@ -338,6 +353,7 @@ function Home() {
                       workplace={testimonial.workplace}
                     />
                 ))}
+                {/* </Slider> */}
               </div>
 
             </div>
