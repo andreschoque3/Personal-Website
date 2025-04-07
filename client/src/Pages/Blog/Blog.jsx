@@ -34,7 +34,7 @@ function Blog() {
     {
       imgSrc: blog6,
       imgAlt: 'Blog-card-1',
-      blogTitle: 'What Do You Fear? (How to Use Fear to Your Advantage)',
+      blogTitle: 'Facing Fear (How to Use Fear to Your Advantage)',
       blogLink: '/blog/facing-fear',
       blogDate: 'April 8, 2025'
     },
