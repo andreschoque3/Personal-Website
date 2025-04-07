@@ -143,7 +143,7 @@ useEffect(() => {
 
                     <h3><strong>2) Use It As A Signal Not A Stop Sign</strong></h3>
 
-                    <p>Carl Jung said it best, ‘Where your fear is, there is your task’. The things we procrastinate on—starting a business, asking for a raise, leaving a toxic job—are often the 
+                    <p>Carl Jung said it best, <em>‘Where your fear is, there is your task’</em>. The things we procrastinate on—starting a business, asking for a raise, leaving a stagnating job—are often the 
                         things that matter most. Instead of seeing fear as a barrier, see it as a guidepost. If it scares you, it probably means you’re heading somewhere important.</p>
 
                     <br />
