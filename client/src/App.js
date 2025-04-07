@@ -33,7 +33,7 @@ function App() {
           <Route path='/blog/you-are-one-mentor-away-from-changing-your-life' element={<BlogPost3/>}/>
           <Route path='/blog/why-learn-code-you-will-solve-problems-50-faster'element={<BlogPost4/>}/>
           <Route path='/blog/the-power-of-walking' element={<BlogPost5/>}/>
-          <Route path='/blog/what-do-you-fear' element={<BlogPost6/>}/>
+          <Route path='/blog/facing-fear' element={<BlogPost6/>}/>
         </Routes>
       </BrowserRouter>
       <ToastContainer/>
