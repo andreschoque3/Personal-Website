@@ -11,6 +11,7 @@ import BlogPost3 from './Pages/Posts/BlogPost3';
 import BlogPost4 from './Pages/Posts/BlogPost4';
 import BlogPost5 from './Pages/Posts/BlogPost5';
 import BlogPost6 from './Pages/Posts/BlogPost6';
+import BlogPost7 from './Pages/Posts/BlogPost7';
 import Coaching from './Pages/Coaching/Coaching';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path='/blog/why-learn-code-you-will-solve-problems-50-faster'element={<BlogPost4/>}/>
           <Route path='/blog/the-power-of-walking' element={<BlogPost5/>}/>
           <Route path='/blog/facing-fear' element={<BlogPost6/>}/>
+          <Route path='/blog/trust-even-when-you-fail' element={<BlogPost7/>}/>
         </Routes>
       </BrowserRouter>
       <ToastContainer/>
