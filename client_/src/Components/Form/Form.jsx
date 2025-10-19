@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 const Form = ({ title, description, classes }) => {
 
-  const apiKey = process.env.REACT_APP_WEB3FORMS_API_KEY
+  const apiKey = import.meta.env.VITE_WEB3FORMS_API_KEY
 
     // Email functionality
   const onSubmit = async (event) => {

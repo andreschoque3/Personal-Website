@@ -122,7 +122,7 @@ function Home() {
     ];
 
   // Contact form functionality
-  const scriptURL = process.env.REACT_APP_GOOGLE_SCRIPT;
+  const scriptURL = import.meta.env.REACT_APP_GOOGLE_SCRIPT;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
