@@ -2,7 +2,7 @@
 <p align="center">
   <h1 align="center">Andres Choque Website</h1>
 
-  <h3 align="center">A website showcasing my personal brand</h3>
+  <h3 align="center">A website showcasing my personal story & brand.</h3>
 </p>
 
 
